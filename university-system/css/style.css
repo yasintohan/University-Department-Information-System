@@ -330,3 +330,32 @@ section .section-title {
 .announce-title {
 	border-bottom: 1px rgba(22, 26, 29, 0.9) solid;
 }
+
+
+
+.login-body {
+	
+	background: rgb(102,7,8);
+	background: linear-gradient(0deg, rgba(102,7,8,1) 0%, rgba(229,56,59,1) 100%);
+}
+
+.login-block{
+float:left;
+width:100%;
+padding : auto 0;
+margin: 10% 0;
+
+
+}
+
+
+
+
+.login-block .container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#FEB58A;}
+.login-sec .copy-text a{color:#E36262;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #DE6262;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #DE6262; color:#fff; font-weight:600;}
