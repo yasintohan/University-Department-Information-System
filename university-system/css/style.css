@@ -10,7 +10,6 @@ body {
 #mogo-header{
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    background: url("https://images.alphacoders.com/511/511344.jpg")no-repeat center center / cover;
 }
 #mogo-header:after{
     content: "";
@@ -230,7 +229,7 @@ body {
 }
 
 
-.about-h3 {
+.about-h {
 	color: rgba(102,7,8,0.9);
 	
 }
