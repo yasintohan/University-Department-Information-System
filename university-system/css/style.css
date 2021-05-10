@@ -359,3 +359,80 @@ margin: 10% 0;
 .login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #DE6262;}
 .login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
 .btn-login{background: #DE6262; color:#fff; font-weight:600;}
+
+
+
+
+
+
+
+/* people cards */
+.single-team .inner {
+    text-align: center;
+	margin-bottom: 35px;
+	border: 1px solid #e5eaf0;
+	padding: 5px 5px 0px;
+}
+
+.single-team .inner .team-img {
+	position: relative;
+}
+
+.single-team .inner .team-img img {
+	width: 100%;
+}
+
+.single-team .inner .team-img::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.single-team .inner .team-img:hover::after {
+	opacity: 0.4;
+}
+
+.single-team .inner .team-content {
+	padding: 22px 0px 0px;
+}
+
+.single-team .inner .team-content h4 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.single-team .inner .team-content h5 {
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #7d91aa;
+}
+
+.single-team .inner .team-content a {
+	display: inline-block;
+	padding: 2px;
+	margin: 0 3px;
+	font-size: 16px;
+}
+
+.team-social {
+	background: #f3f6fa;
+	width: 50%;
+	padding-top: 4px;
+	margin: auto;
+	border-radius: 15px 15px 0px 0px;
+	margin-top: 17px;
+}
+
+
+/* #people cards */
+
+
+
+
+
+
