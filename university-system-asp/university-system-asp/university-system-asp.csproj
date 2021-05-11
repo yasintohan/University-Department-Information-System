@@ -140,6 +140,7 @@
     <Compile Include="Models\Classes\Carousel.cs" />
     <Compile Include="Models\Classes\Classroom.cs" />
     <Compile Include="Models\Classes\Contact.cs" />
+    <Compile Include="Models\Classes\DBContext.cs" />
     <Compile Include="Models\Classes\Events.cs" />
     <Compile Include="Models\Classes\Lab.cs" />
     <Compile Include="Models\Classes\News.cs" />
