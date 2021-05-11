@@ -3,8 +3,9 @@ body {
 	background: rgba(211,211,211,0.9);
 }
 
-.content {
 
+.content {
+    min-height: 720px;
 	background: rgba(255,255,255,0.9);
 }
 

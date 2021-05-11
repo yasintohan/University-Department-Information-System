@@ -124,6 +124,7 @@
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\EducationalController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -183,6 +184,8 @@
     <Content Include="Views\Department\Infrastructure.cshtml" />
     <Content Include="Views\Educational\Courses.cshtml" />
     <Content Include="Views\Educational\SeniorProjects.cshtml" />
+    <Content Include="Views\Research\ResearchAreas.cshtml" />
+    <Content Include="Views\Research\ResearchProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

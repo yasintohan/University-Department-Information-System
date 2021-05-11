@@ -65,9 +65,6 @@
                                     <ul class="dropdown-menu">
                                         <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
                                         <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </li>
 
@@ -76,11 +73,8 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
+                                        <li>@Html.ActionLink("Research Areas", "ResearchAreas", "Research")</li>
+                                        <li>@Html.ActionLink("Research Projects", "ResearchProjects", "Research")</li>
                                     </ul>
                                 </li>
 
@@ -108,9 +102,6 @@
                                     <ul class="dropdown-menu">
                                         <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
                                         <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </li>
 
@@ -120,11 +111,8 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
+                                        <li>@Html.ActionLink("Research Areas", "ResearchAreas", "Research")</li>
+                                        <li>@Html.ActionLink("Research Projects", "ResearchProjects", "Research")</li>
                                     </ul>
                                 </li>
                                 <li><a href="@Url.Action("Index", "Admin")">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
@@ -198,7 +186,7 @@
     </header><!--/Header End-->
 
 
-    <div class="container content" style="margin-bottom:20px">
+    <div class="content container" style="margin-bottom:20px">
         @RenderBody()
     </div>
 
