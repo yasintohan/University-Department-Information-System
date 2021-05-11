@@ -18,5 +18,10 @@ namespace university_system_asp.Controllers
         {
             return View();
         }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
