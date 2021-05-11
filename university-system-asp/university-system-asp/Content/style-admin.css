@@ -1,7 +1,15 @@
+body {
+    padding-top: 0;
+    background: rgba(211,211,211,0.9);
+}
+
+
 :focus {
   outline: none;
   
 }
+
+
 .row {
   margin-right: 0;
   margin-left: 0;

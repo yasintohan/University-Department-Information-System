@@ -26,5 +26,13 @@ namespace university_system_asp.Controllers
 
             return View();
         }
+
+        public ActionResult People()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }
