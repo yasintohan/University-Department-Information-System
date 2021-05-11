@@ -23,5 +23,15 @@ namespace university_system_asp.Controllers
         {
             return View();
         }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult Events()
+        {
+            return View();
+        }
     }
 }
