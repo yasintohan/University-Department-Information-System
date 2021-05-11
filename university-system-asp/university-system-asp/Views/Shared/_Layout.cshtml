@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - ESTU</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -47,13 +47,14 @@
 
                         <div class="collapse navbar-collapse navbar-right hidden-xs">
                             <ul class="nav navbar-nav main-nav">
-                                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
                                 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li>@Html.ActionLink("People", "People", "Department")</li>
                                         <li>@Html.ActionLink("About", "About", "Department")</li>
+                                        <li>@Html.ActionLink("Infrastructure", "Infrastructure", "Department")</li>
                                         <li>@Html.ActionLink("Events", "Events", "Department")</li>
                                         <li>@Html.ActionLink("Contact", "Contact", "Department")</li>
                                     </ul>
@@ -100,12 +101,53 @@
                             </ul>
                         </div>
                         <div class="collapse navbar-responsive-collapse hidden-lg hidden-md hidden-sm" id="navbar-primary-collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#mogo-header" data-toggle="collapse" data-target=".navbar-responsive-collapse">Home</a></li>
-                                <li><a href="#mogo-story" data-toggle="collapse" data-target=".navbar-responsive-collapse">Department</a></li>
-                                <li><a href="#mogo-services" data-toggle="collapse" data-target=".navbar-responsive-collapse">Undergraduate</a></li>
-                                <li><a href="#mogo-team" data-toggle="collapse" data-target=".navbar-responsive-collapse">Graduate</a></li>
-                                <li><a href="#mogo-portfolio" data-toggle="collapse" data-target=".navbar-responsive-collapse">Research</a></li>
+                            <ul class="nav navbar-nav main-nav">
+                                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>@Html.ActionLink("People", "People", "Department")</li>
+                                        <li>@Html.ActionLink("About", "About", "Department")</li>
+                                        <li>@Html.ActionLink("Events", "Events", "Department")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Department")</li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Undergraduate <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graduate <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+
 
                             </ul>
                         </div><!-- /.navbar-collapse -->

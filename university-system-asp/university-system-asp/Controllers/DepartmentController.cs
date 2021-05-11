@@ -33,5 +33,10 @@ namespace university_system_asp.Controllers
         {
             return View();
         }
+
+        public ActionResult Infrastructure()
+        {
+            return View();
+        }
     }
 }
