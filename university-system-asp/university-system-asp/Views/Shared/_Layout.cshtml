@@ -34,7 +34,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            
+
                             <a class="navbar-brand site-logo" href='@Url.Action("Index", "Home")'>
                                 <img class="img-fluid" src="@Url.Content("~/Images/estuLogo.png")" alt="Department of Computer Engineering">
                                 <span style="font-size: 12px;">Department of Computer Engineering</span>
@@ -48,7 +48,7 @@
                         <div class="collapse navbar-collapse navbar-right hidden-xs">
                             <ul class="nav navbar-nav main-nav">
                                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                                
+
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -61,26 +61,16 @@
                                 </li>
 
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Undergraduate <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Educational <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
+                                        <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
+                                        <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
                                         <li><a href="#">Something else here</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graduate <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </li>
 
 
                                 <li class="dropdown">
@@ -94,11 +84,9 @@
                                     </ul>
                                 </li>
 
+                                <li><a href="@Url.Action("Index", "Admin")">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                            </ul>
 
-                            </ul>
-                            <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-                            </ul>
                         </div>
                         <div class="collapse navbar-responsive-collapse hidden-lg hidden-md hidden-sm" id="navbar-primary-collapse">
                             <ul class="nav navbar-nav main-nav">
@@ -109,32 +97,24 @@
                                     <ul class="dropdown-menu">
                                         <li>@Html.ActionLink("People", "People", "Department")</li>
                                         <li>@Html.ActionLink("About", "About", "Department")</li>
+                                        <li>@Html.ActionLink("Infrastructure", "Infrastructure", "Department")</li>
                                         <li>@Html.ActionLink("Events", "Events", "Department")</li>
                                         <li>@Html.ActionLink("Contact", "Contact", "Department")</li>
                                     </ul>
                                 </li>
 
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Undergraduate <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Educational <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
+                                        <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
+                                        <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
                                         <li><a href="#">Something else here</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graduate <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </li>
+                              
 
 
                                 <li class="dropdown">
@@ -147,9 +127,10 @@
                                         <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </li>
-
+                                <li><a href="@Url.Action("Index", "Admin")">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
 
                             </ul>
+
                         </div><!-- /.navbar-collapse -->
                     </div>
                 </nav>
@@ -215,80 +196,80 @@
             </div>
         </div>
     </header><!--/Header End-->
-    
 
 
-    @RenderBody()
-
-
-
-
+    <div class="container content" style="margin-bottom:20px">
+        @RenderBody()
+    </div>
 
 
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h5>Main Links</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Department</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Undergraduate</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Graduate</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Research</a></li>
-                    </ul>
+
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Main Links</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Department</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Undergraduate</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Graduate</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Research</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Department</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>People</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Infrastructure</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Events</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Undergraduate</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Courseware</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Course List</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Curriculum</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Senior Projects</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h5>Department</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>People</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Infrastructure</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Events</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Contact</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h5>Undergraduate</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Courseware</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Course List</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Curriculum</a></li>
-                        <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Senior Projects</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p class="h6">© All rights reserved<a href="index.html" target="_blank"> 1993-2020 CENG.</a></p>
+                    </div>
+                    <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                    <ul class="list-unstyled list-inline social text-center">
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <hr>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                    <p class="h6">© All rights reserved<a href="index.html" target="_blank"> 1993-2020 CENG.</a></p>
-                </div>
-                <hr>
-            </div>
-        </div>
-    </section>
-    <!-- ./Footer -->
+        </section>
+        <!-- ./Footer -->
 
 
 
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 
 

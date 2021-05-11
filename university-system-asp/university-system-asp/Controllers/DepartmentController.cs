@@ -9,10 +9,7 @@ namespace university_system_asp.Controllers
     public class DepartmentController : Controller
     {
         // GET: Department
-        public ActionResult Index()
-        {
-            return View();
-        }
+        
 
         public ActionResult People()
         {
