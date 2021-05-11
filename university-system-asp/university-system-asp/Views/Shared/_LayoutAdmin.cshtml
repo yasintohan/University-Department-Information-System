@@ -54,10 +54,9 @@
                 <!-- Main Menu -->
                 <div class="side-menu-container">
                     <ul class="nav navbar-nav">
-
-                        <li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-                        <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+                        <li><a href="@Url.Action("Index", "Admin")"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="@Url.Action("People", "Admin")"><span class="glyphicon glyphicon-send"></span> People</a></li>
+                        <li><a href="@Url.Action("Events", "Admin")"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
 
                         <!-- Dropdown-->
                         <li class="panel panel-default" id="dropdown">
@@ -69,8 +68,7 @@
                             <div id="dropdown-lvl1" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="#">Link</a></li>
-                                        <li><a href="#">Link</a></li>
+
                                         <li><a href="#">Link</a></li>
 
                                         <!-- Dropdown level 2 -->
@@ -113,7 +111,7 @@
 
 
 
-  
+
 
 
 
@@ -129,6 +127,7 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/admin.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 

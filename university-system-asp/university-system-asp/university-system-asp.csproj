@@ -128,6 +128,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Classes\AboutPage.cs" />
+    <Compile Include="Models\Classes\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +150,7 @@
     <Content Include="Images\logo_eurace.jpg" />
     <Content Include="Images\logo_mudek.jpg" />
     <Content Include="Images\map_v2.png" />
+    <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -186,10 +189,11 @@
     <Content Include="Views\Educational\SeniorProjects.cshtml" />
     <Content Include="Views\Research\ResearchAreas.cshtml" />
     <Content Include="Views\Research\ResearchProjects.cshtml" />
+    <Content Include="Views\Admin\People.cshtml" />
+    <Content Include="Views\Admin\Events.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

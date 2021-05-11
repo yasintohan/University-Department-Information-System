@@ -13,5 +13,16 @@ namespace university_system_asp.Controllers
         {
             return View();
         }
+
+
+        public ActionResult People()
+        {
+            return View();
+        }
+
+        public ActionResult Events()
+        {
+            return View();
+        }
     }
 }
