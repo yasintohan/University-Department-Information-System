@@ -16,6 +16,8 @@ namespace university_system_asp.Models.Classes
         public string Image { get; set; }
         public string Mail { get; set; }
         public string Tel { get; set; }
-
+        public ICollection<Announce> announces { get; set; }
+        public ICollection<ResearchProject> researchProjects { get; set; }
+        public ICollection<Course> courses { get; set; }
     }
 }

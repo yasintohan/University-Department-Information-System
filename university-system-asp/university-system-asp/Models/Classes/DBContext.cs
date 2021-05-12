@@ -22,6 +22,10 @@ namespace university_system_asp.Models.Classes
         public DbSet<ResearchArea> researchAreas { get; set; }
         public DbSet<ResearchProject> researchProjects { get; set; }
         public DbSet<SocialIcon> socialIcons { get; set; }
+        public DbSet<Course> courses { get; set; }
+        public DbSet<CourseAnnounce> courseAnnounces { get; set; }
+        public DbSet<Assignment> assignments { get; set; }
+        public DbSet<CourseWeek> courseWeeks { get; set; }
 
 
     }
