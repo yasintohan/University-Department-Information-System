@@ -15,7 +15,9 @@ namespace university_system_asp.Controllers
 
         public ActionResult People()
         {
-            return View();
+            var values = dBContext.peoples.ToList();
+
+            return View(values);
         }
 
         public ActionResult About()

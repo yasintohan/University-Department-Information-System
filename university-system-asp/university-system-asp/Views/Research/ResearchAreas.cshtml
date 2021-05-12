@@ -1,4 +1,5 @@
-﻿
+﻿@using university_system_asp.Models.Classes
+@model List<ResearchArea>
 @{
     ViewBag.Title = "Research Areas";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,20 +10,11 @@
     <h2 class="about-h">@ViewBag.Title</h2>
 
     <ul>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
-        <li>Artificial Intelligence</li>
-        <li>Big Data</li>
+        @foreach (var x in Model)
+        {
+        <li>@x.Area</li>
+        }
+        
 
     </ul>
 
