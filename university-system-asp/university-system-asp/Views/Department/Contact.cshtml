@@ -1,4 +1,5 @@
-﻿
+﻿@using university_system_asp.Models.Classes
+@model List<Contact>
 @{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,43 +8,44 @@
 
 
 
-    <div class="row people" style="margin-top:20px">
+<div class="row people" style="margin-top:20px">
 
-        <div class="col-lg-12">
+    <div class="col-lg-12">
 
-            <h2 class="about-h">@ViewBag.Title</h2>
+        <h2 class="about-h">@ViewBag.Title</h2>
 
-            <strong>Postal Address:</strong><br />
+        <strong>Postal Address:</strong><br />
+
+        @foreach (var x in Model)
+        {
+
 
             <address>
-                Eskisehir Teknik Universitesi<br />
-                Iki Eylul Kampusu<br />
-                Bilgisayar Muhendisligi Bolumu<br />
-                26555 ESKISEHIR / TURKEY<br />
+                @x.Adress<br />
                 <abbr title="Phone">Tel:</abbr>
-                +90 (222) 321 35 50 / 6550<br />
+                @x.Tel<br />
                 <abbr title="Phone">Fax:</abbr>
-                +90 (222) 321 95 01
+                @x.Fax
             </address>
 
             <address>
-                <strong>Department e-mail address:</strong>   <a href="mailto:mf.ceng.estu@gmail.com">mf.ceng.estu@gmail.com</a><br />
-                <strong>Facebook:</strong> <a href="https://www.facebook.com/groups/468286579868324/">https://www.facebook.com/groups/468286579868324/</a><br />
-                <strong>Twitter:</strong> <a href="https://twitter.com/EstuCeng">https://twitter.com/EstuCeng</a><br />
-                <strong>Instagram:</strong> <a href="https://www.instagram.com/estuceng/">https://www.instagram.com/estuceng/</a><br />
-                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/groups/8956382/">https://www.linkedin.com/groups/8956382/</a><br />
-                <strong>Youtube:</strong> <a href="https://www.youtube.com/channel/UCtv9W2lJcgHhlVGJrrcxDcQ">https://www.youtube.com/channel/UCtv9W2lJcgHhlVGJrrcxDcQ</a><br />
+                <strong>Department e-mail address:</strong>   <a href="mailto:@x.Mail">@x.Mail</a><br />
+                <strong>Facebook:</strong> <a href="@x.Facebook">@x.Facebook</a><br />
+                <strong>Twitter:</strong> <a href="@x.Twitter">@x.Twitter</a><br />
+                <strong>LinkedIn:</strong> <a href="@x.Linkedin">@x.Linkedin</a><br />
+                <strong>Youtube:</strong> <a href="@x.Youtube">@x.Youtube</a><br />
             </address>
-
-
-        </div>
-
-
-
-       
-
+            
+        }
 
     </div>
+
+
+
+
+
+
+</div>
 
 
 

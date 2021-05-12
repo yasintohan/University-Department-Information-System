@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using university_system_asp.Models.Classes;
 
 namespace university_system_asp.Controllers
 {
     public class DepartmentController : Controller
     {
-        // GET: Department
+
+        DBContext dBContext = new DBContext();
         
 
         public ActionResult People()
@@ -18,12 +20,17 @@ namespace university_system_asp.Controllers
 
         public ActionResult About()
         {
-            return View();
+
+            var values = dBContext.aboutPages.ToList();
+
+            return View(values);
         }
 
         public ActionResult Contact()
         {
-            return View();
+            var values = dBContext.contacts.ToList();
+
+            return View(values);
         }
 
         public ActionResult Events()
