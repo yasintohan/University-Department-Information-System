@@ -72,7 +72,6 @@ C:\Github\University-Department-Information-System\university-system-asp\univers
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\Newtonsoft.Json.xml
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\Antlr3.Runtime.pdb
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\obj\Debug\university-system-asp.csprojAssemblyReference.cache
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\obj\Debug\university-system-asp.csproj.CoreCompileInputs.cache
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\obj\Debug\university-system-asp.csproj.CopyComplete
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\obj\Debug\university-system-asp.dll

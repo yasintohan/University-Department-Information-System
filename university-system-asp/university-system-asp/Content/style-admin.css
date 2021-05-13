@@ -3,12 +3,24 @@ body {
     background: rgba(211,211,211,0.9);
 }
 
-
-:focus {
-  outline: none;
-  
+.form-bg {
+    background-color: #fff;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    border-radius: 10px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.about-h {
+    color: rgba(102,7,8,0.9);
+}
+
+:focus {
+    outline: none;
+}
 
 .row {
   margin-right: 0;
@@ -354,3 +366,5 @@ body {
     margin: 0;
   }
 }
+
+

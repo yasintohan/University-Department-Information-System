@@ -1,0 +1,12 @@
+﻿@using university_system_asp.Models.Classes
+@model List<People>
+@{
+    ViewBag.Title = "PeoplePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var x in Model)
+{
+    <h2> @x.Name </h2>
+    <h2> @x.Mail </h2>
+}

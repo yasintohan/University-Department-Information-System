@@ -1403,6 +1403,7 @@ a.bg-warning:focus {
 .bg-danger {
   background-color: #f2dede;
 }
+
 a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e4b9b9;

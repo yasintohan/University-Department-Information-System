@@ -20,6 +20,14 @@ namespace university_system_asp.Controllers
             return View(values);
         }
 
+        public ActionResult PeoplePage(int id)
+        {
+            var values = dBContext.peoples.Where(x => x.Id == id).ToList();
+
+            return View(values);
+        }
+
+
         public ActionResult About()
         {
 
