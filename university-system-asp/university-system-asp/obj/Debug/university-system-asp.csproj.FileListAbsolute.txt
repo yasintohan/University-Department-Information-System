@@ -80,3 +80,4 @@ C:\Github\University-Department-Information-System\university-system-asp\univers
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\EntityFramework.SqlServer.dll
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\EntityFramework.xml
 C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\bin\EntityFramework.SqlServer.xml
+C:\Github\University-Department-Information-System\university-system-asp\university-system-asp\obj\Debug\university-system-asp.csproj.AssemblyReference.cache
