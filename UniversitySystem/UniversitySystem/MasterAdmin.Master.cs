@@ -11,7 +11,19 @@ namespace UniversitySystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            object username = Session["Username"];
 
+            if (username == null)
+            {
+                Response.Redirect("../Admin/login.aspx");
+            }
+
+        }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("../");
         }
     }
 }

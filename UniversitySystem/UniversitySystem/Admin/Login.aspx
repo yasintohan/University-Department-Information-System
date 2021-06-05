@@ -30,27 +30,28 @@
 	<div class="row">
 		<div class="col-md-4 login-sec">
 		    <h2 class="text-center">Login Now</h2>
-		    <form class="login-form">
-  <div class="form-group">
-    <label for="exampleInputEmail1" class="text-uppercase">Username</label>
-    <input type="text" class="form-control" placeholder="">
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1" class="text-uppercase">Password</label>
-    <input type="password" class="form-control" placeholder="">
-  </div>
+		    <form class="login-form" runat="server">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+                 <asp:TextBox class="form-control" ID="txtUserName" placeholder="Username" runat="server" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+                  <asp:TextBox ID="txtPassword" class="form-control" placeholder="Parolanız" runat="server" TextMode="Password" />
+              </div>
   
   
-    <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      <small>Remember Me</small>
-    </label>
-    <button type="submit" class="btn btn-login float-right">Submit</button>
-  </div>
+                <div class="form-check">
+
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  <small>Remember Me</small>
+                </label>
+                <asp:Button OnClick="loginBtn_Click" class="btn btn-login float-right" ID="loginBtn" runat="server" Text="Submit" />
+                    <asp:Label ID="statusLabel" Text="" runat="server" />
+              </div>
   
-</form>
+            </form>
 
 		</div>
 		<div class="col-md-8 ">

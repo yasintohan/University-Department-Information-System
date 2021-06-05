@@ -98,8 +98,10 @@
                         </li>
 
                         <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+                        <li><form runat="server"><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></form></li>
 
                     </ul>
+                    
                 </div><!-- /.navbar-collapse -->
             </nav>
 

@@ -11,7 +11,35 @@ namespace UniversitySystem.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            object username = Session["Username"];
 
+            if (username != null)
+            {
+               Response.Redirect("../Admin/index.aspx");
+            }
+            else
+            {
+
+            }
+        }
+
+        protected void loginBtn_Click(object sender, EventArgs e)
+        {
+            Session.Timeout = 120;
+
+
+            if (txtUserName.Text == "yasin" & txtPassword.Text == "123456")
+            {
+
+                Session.Add("Username", txtUserName.Text);
+
+                Response.Redirect("../Admin/index.aspx");
+
+            }
+            else
+            {
+                statusLabel.Text = "Login Error.";
+            }
         }
     }
 }
