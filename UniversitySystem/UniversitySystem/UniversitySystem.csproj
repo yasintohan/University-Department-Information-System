@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\People.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\People.aspx.cs">
       <DependentUpon>People.aspx</DependentUpon>

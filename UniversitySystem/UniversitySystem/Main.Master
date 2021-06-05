@@ -11,7 +11,6 @@
     <title>@ViewBag.Title - ESTU</title>
 
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/style-admin.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
 
     <script src="Scripts/modernizr-2.8.3.js"></script>
@@ -42,7 +41,7 @@
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand site-logo" href='@Url.Action("Index", "Home")'>
+                            <a class="navbar-brand site-logo" href='../'>
                                 <img class="img-fluid" src="../Images/estuLogo.png" alt="Department of Computer Engineering">
                                 <span style="font-size: 12px;">Department of Computer Engineering</span>
                             </a>
@@ -51,27 +50,26 @@
 
 
 
-
                         <div class="collapse navbar-collapse navbar-right hidden-xs">
                             <ul class="nav navbar-nav main-nav">
-                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li><a href="../">Home</a></li>
 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("People", "People", "Department")</li>
-                                        <li>@Html.ActionLink("About", "About", "Department")</li>
-                                        <li>@Html.ActionLink("Infrastructure", "Infrastructure", "Department")</li>
-                                        <li>@Html.ActionLink("Events", "Events", "Department")</li>
-                                        <li>@Html.ActionLink("Contact", "Contact", "Department")</li>
+                                        <li><a href="../Department/People.aspx">People</a></li>
+                                        <li><a href="../Department/About.aspx">About</a></li>
+                                        <li><a href="../Department/Infrastructure.aspx">Infrastructure</a></li>
+                                        <li><a href="../Department/Events.aspx">Events</a></li>
+                                        <li><a href="../Department/Contact.aspx">Contact</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Educational <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
-                                        <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
+                                        <li><a href="../Educational/Courses.aspx">Courses</a></li>
+                                        <li><a href="../Educational/SeniorProjects.aspx">Senior Projects</a></li>
                                     </ul>
                                 </li>
 
@@ -80,35 +78,35 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Research Areas", "ResearchAreas", "Research")</li>
-                                        <li>@Html.ActionLink("Research Projects", "ResearchProjects", "Research")</li>
+                                        <li><a href="../Research/ResearchAreas.aspx">Research Areas</a></li>
+                                        <li><a href="../Research/ResearchProjects.aspx">Research Projects</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="@Url.Action("Index", "Admin")">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                                <li><a href="../Admin/index.aspx">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                             </ul>
 
                         </div>
                         <div class="collapse navbar-responsive-collapse hidden-lg hidden-md hidden-sm" id="navbar-primary-collapse">
                             <ul class="nav navbar-nav main-nav">
-                                <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                                 <li><a href="../">Home</a></li>
 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("People", "People", "Department")</li>
-                                        <li>@Html.ActionLink("About", "About", "Department")</li>
-                                        <li>@Html.ActionLink("Infrastructure", "Infrastructure", "Department")</li>
-                                        <li>@Html.ActionLink("Events", "Events", "Department")</li>
-                                        <li>@Html.ActionLink("Contact", "Contact", "Department")</li>
+                                        <li><a href="../Department/People.aspx">People</a></li>
+                                        <li><a href="../Department/About.aspx">About</a></li>
+                                        <li><a href="../Department/Infrastructure.aspx">Infrastructure</a></li>
+                                        <li><a href="../Department/Events.aspx">Events</a></li>
+                                        <li><a href="../Department/Contact.aspx">Contact</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Educational <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Courses", "Courses", "Educational")</li>
-                                        <li>@Html.ActionLink("Senior Projects", "SeniorProjects", "Educational")</li>
+                                        <li><a href="../Educational/Courses.aspx">Courses</a></li>
+                                        <li><a href="../Educational/SeniorProjects.aspx">Senior Projects</a></li>
                                     </ul>
                                 </li>
 
@@ -118,12 +116,11 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>@Html.ActionLink("Research Areas", "ResearchAreas", "Research")</li>
-                                        <li>@Html.ActionLink("Research Projects", "ResearchProjects", "Research")</li>
+                                        <li><a href="../Research/ResearchAreas.aspx">Research Areas</a></li>
+                                        <li><a href="../Research/ResearchProjects.aspx">Research Projects</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="@Url.Action("Index", "Admin")">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-
+                                <li><a href="../Admin/index.aspx">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                             </ul>
 
                         </div><!-- /.navbar-collapse -->
@@ -263,8 +260,8 @@
 
 
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-        <script src="Scripts/jquery-3.4.1.js"></script>
-        <script src="Scripts/bootstrap.js"></script>
+        <script src="../Scripts/jquery-3.4.1.js"></script>
+        <script src="../Scripts/bootstrap.js"></script>
 
 
 </body>
