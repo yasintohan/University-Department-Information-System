@@ -67,10 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Events.aspx" />
+    <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\People.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Department\About.aspx" />
+    <Content Include="Department\Contact.aspx" />
+    <Content Include="Department\Events.aspx" />
+    <Content Include="Department\Infrastructure.aspx" />
+    <Content Include="Department\People.aspx" />
+    <Content Include="Department\PeoplePage.aspx" />
+    <Content Include="Educational\Courses.aspx" />
+    <Content Include="Educational\SeniorProjects.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\Class_B1_icon.jpg" />
@@ -80,10 +91,13 @@
     <Content Include="Images\logo_eurace.jpg" />
     <Content Include="Images\logo_mudek.jpg" />
     <Content Include="Images\map_v2.png" />
+    <Content Include="Research\ResearchAreas.aspx" />
+    <Content Include="Research\ResearchProjects.aspx" />
     <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Main.Master" />
+    <Content Include="MasterAdmin.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -98,12 +112,89 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\People.aspx.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\Infrastructure.aspx.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Infrastructure.aspx.designer.cs">
+      <DependentUpon>Infrastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\People.aspx.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\PeoplePage.aspx.cs">
+      <DependentUpon>PeoplePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\PeoplePage.aspx.designer.cs">
+      <DependentUpon>PeoplePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Educational\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Educational\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Educational\SeniorProjects.aspx.cs">
+      <DependentUpon>SeniorProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Educational\SeniorProjects.aspx.designer.cs">
+      <DependentUpon>SeniorProjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -112,7 +203,28 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="MasterAdmin.Master.cs">
+      <DependentUpon>MasterAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterAdmin.Master.designer.cs">
+      <DependentUpon>MasterAdmin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Research\ResearchAreas.aspx.cs">
+      <DependentUpon>ResearchAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Research\ResearchAreas.aspx.designer.cs">
+      <DependentUpon>ResearchAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Research\ResearchProjects.aspx.cs">
+      <DependentUpon>ResearchProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Research\ResearchProjects.aspx.designer.cs">
+      <DependentUpon>ResearchProjects.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />

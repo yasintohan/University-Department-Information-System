@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterAdmin.master.cs" Inherits="UniversitySystem.MasterAdmin" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title - ESTU</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/style-admin.css" rel="stylesheet" />
+    <link href="Content/style-admin.css" rel="stylesheet" />
+
+    <script src="Scripts/modernizr-2.8.3.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+
+
+    <div class="row">
+        <!-- uncomment code for absolute positioning tweek see top comment in css -->
+        <!-- <div class="absolute-wrapper"> </div> -->
+        <!-- Menu -->
+        <div class="side-menu">
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <div class="brand-wrapper">
+                        <!-- Hamburger -->
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <!-- Brand -->
+                        <div class="brand-name-wrapper">
+                            <a class="navbar-brand site-logo" href="@Url.Action("Index", "Home")">
+                                <img class="img-responsive" src="../Images/estuLogo.png" alt="Department of Computer Engineering">
+                                <span style="font-size: 12px;">Department of Computer Engineering</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Main Menu -->
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="@Url.Action("Index", "Admin")"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="@Url.Action("People", "Admin")"><span class="glyphicon glyphicon-send"></span> People</a></li>
+                        <li><a href="@Url.Action("Events", "Admin")"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
+
+                        <!-- Dropdown-->
+                        <li class="panel panel-default" id="dropdown">
+                            <a data-toggle="collapse" href="#dropdown-lvl1">
+                                <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
+                            </a>
+
+                            <!-- Dropdown level 1 -->
+                            <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+
+                                        <li><a href="#">Link</a></li>
+
+                                        <!-- Dropdown level 2 -->
+                                        <li class="panel panel-default" id="dropdown">
+                                            <a data-toggle="collapse" href="#dropdown-lvl2">
+                                                <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+                                            </a>
+                                            <div id="dropdown-lvl2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="#">Link</a></li>
+                                                        <li><a href="#">Link</a></li>
+                                                        <li><a href="#">Link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="container-fluid">
+            <div class="side-body">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="../Scripts/jquery-3.4.1.js"></script>
+        <script src="../Scripts/bootstrap.js"></script>
+        <script src="../Scripts/admin.js"></script>
+
+</body>
+
+
+</html>

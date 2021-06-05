@@ -43,7 +43,7 @@
                             </button>
 
                             <a class="navbar-brand site-logo" href='@Url.Action("Index", "Home")'>
-                                <img class="img-fluid" src="Images/estuLogo.png" alt="Department of Computer Engineering">
+                                <img class="img-fluid" src="../Images/estuLogo.png" alt="Department of Computer Engineering">
                                 <span style="font-size: 12px;">Department of Computer Engineering</span>
                             </a>
                         </div>

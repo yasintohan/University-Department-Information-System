@@ -23,12 +23,12 @@
 
         <div class="col-lg-2">
 
-            <img class="img-responsive" src="Images/map_v2.png" alt="">
+            <img class="img-responsive" src="Images/map_v2.png" alt=""/>
         </div>
 
         <div class="col-lg-2">
 
-            <img class="img-responsive" src="Images/logo_mudek.jpg" alt=""><img class="img-responsive" src="Images/logo_eurace.jpg" alt=""><img class="img-responsive" src="Images/logo_eng.jpg" alt="">
+            <img class="img-responsive" src="Images/logo_mudek.jpg" alt=""/><img class="img-responsive" src="Images/logo_eurace.jpg" alt=""/><img class="img-responsive" src="Images/logo_eng.jpg" alt=""/>
         </div>
 
 

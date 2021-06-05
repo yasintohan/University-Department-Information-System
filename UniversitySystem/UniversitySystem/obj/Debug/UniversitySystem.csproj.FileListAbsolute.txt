@@ -1,3 +1,4 @@
+C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\UniversitySystem.dll.config
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\UniversitySystem.dll
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\UniversitySystem.pdb
@@ -52,8 +53,6 @@ C:\Github\University-Department-Information-System\UniversitySystem\UniversitySy
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\roslyn\VBCSCompiler.exe.config
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.csproj.AssemblyReference.cache
-C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.csproj.CopyComplete
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.dll
 C:\Github\University-Department-Information-System\UniversitySystem\UniversitySystem\obj\Debug\UniversitySystem.pdb
