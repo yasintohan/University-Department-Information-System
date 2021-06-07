@@ -4,24 +4,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
      <div class="row people" style="margin-top:20px">
-
-        <div class="col-lg-12" style="padding:20px">
+         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+         <asp:ListView runat="server" ID="lstAbout">
+             <ItemTemplate>
+                 
+                 <div class="col-lg-12" style="padding:20px">
             <h3 class="about-h">About Department</h3>
 
-            @foreach (var x in Model)
-            {
-                <p>@x.Description</p>
-            }
-           
+                <p><%#Eval("Description") %></p>
+ 
         </div>
 
         <div class="col-lg-12" style="padding:20px">
             <h3 class="about-h">Mission</h3>
 
-            @foreach (var x in Model)
-            {
-                <p>@x.Mission</p>
-            }
+                <p><%#Eval("Mission") %></p>
 
         </div>
 
@@ -29,10 +26,7 @@
         <div class="col-lg-12" style="padding:20px">
             <h3 class="about-h">Vision</h3>
 
-            @foreach (var x in Model)
-            {
-                <p>@x.Vision</p>
-            }
+                <p><%#Eval("Vision") %></p>
 
         </div>
 
@@ -40,10 +34,8 @@
         <div class="col-lg-12" style="padding:20px">
             <h3 class="about-h">Core Values</h3>
 
-            @foreach (var x in Model)
-            {
-                <p>@x.CoreValues</p>
-            }
+                <p><% HttpUtility.HtmlEncode(Eval("CoreValues"))  %></p>
+
             <!--
     <ul>
         <li>Scientificity</li>
@@ -59,6 +51,10 @@
     -->
 
         </div>
+             </ItemTemplate>
+         </asp:ListView>
+
+        
 
 
 
