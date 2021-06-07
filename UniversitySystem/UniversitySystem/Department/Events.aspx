@@ -29,30 +29,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2016</th>
-                                <td>2</td>
-                            </tr>
+                            <asp:ListView runat="server" ID="lstCount">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("date") %></th>
+                                        <td><%#Eval("Count") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            
 
                         </tbody>
 
@@ -86,48 +71,19 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Erasmus+ meeting with outgoing students</td>
-                                <td>17.10.2016 11:45</td>
-                                <td>Meeting Room</td>
-                                <td>12</td>
-                            </tr>
+
+                            <asp:ListView runat="server" ID="lstData">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("Id") %></th>
+                                        <td><%#Eval("Title") %></td>
+                                        <td><%#Eval("Date") %></td>
+                                        <td><%#Eval("Place") %></td>
+                                        <td><%#Eval("Participants") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            
 
                         </tbody>
 

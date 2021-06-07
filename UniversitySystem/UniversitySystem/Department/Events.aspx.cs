@@ -12,6 +12,22 @@ namespace UniversitySystem.Department
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            getData();
+        }
+
+        private void getData()
+        {
+
+            DBFunctions db = new DBFunctions("Select * from Events");
+            lstData.DataSource = db.getData();
+            lstData.DataBind();
+            db.close();
+
+            db = new DBFunctions("SELECT DATEPART(YYYY,Date) as date, COUNT(Date) as count FROM Events GROUP BY DATEPART(YYYY,Date)");
+            lstCount.DataSource = db.getData();
+            lstCount.DataBind();
+            db.close();
+
         }
     }
 }

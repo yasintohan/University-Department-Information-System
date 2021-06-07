@@ -5,13 +5,15 @@
 
     <div class="col-lg-12">
 
-    <h2 class="about-h">@ViewBag.Title</h2>
+    <h2 class="about-h">Research Areas</h2>
 
     <ul>
-        @foreach (var x in Model)
-        {
-        <li>@x.Area</li>
-        }
+        
+        <asp:ListView runat="server" ID="lstData">
+            <ItemTemplate>
+                <li><%#Eval("Area") %></li>
+            </ItemTemplate>
+        </asp:ListView>
         
 
     </ul>
