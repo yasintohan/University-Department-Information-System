@@ -17,28 +17,29 @@
 
 
 
-    @foreach (var x in Model)
-    {
+     <asp:ListView runat="server" ID="lstPeople">
+             <ItemTemplate>
         <div class="col-sm-6 col-md-3 col-lg-2 single-team">
             <div class="inner">
                 <a href="@Url.Action("PeoplePage", "Department",  new { id = x.Id })">
                     <div class="team-img">
 
-                        <img src="@x.Image" alt="@x.Name">
+                        <img src="<%#Eval("Image") %>" alt="@x.Name">
 
                     </div>
                 </a>
                 <div class="team-content">
-                    <h4>@x.Name</h4>
-                    <h5 style="min-height:50px">@x.Degree</h5>
+                    <h4><%#Eval("Name") %></h4>
+                    <h5 style="min-height:50px"><%#Eval("Degree") %></h5>
                     <div class="team-social">
-                        <a href="mailto:@x.Mail" class="fa fa-envelope"></a>
-                        <a href="tel:@x.Tel" class="fa fa-phone"></a>
+                        <a href="mailto:<%#Eval("Mail") %>" class="fa fa-envelope"></a>
+                        <a href="tel:<%#Eval("Tel") %>" class="fa fa-phone"></a>
                     </div>
                 </div>
             </div>
         </div>
-    }
+    </ItemTemplate>
+         </asp:ListView>
 
 
 

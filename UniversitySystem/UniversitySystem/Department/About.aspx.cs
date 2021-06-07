@@ -18,16 +18,12 @@ namespace UniversitySystem.Department
 
         private void getData()
         {
-            SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[1].ConnectionString);
-            
 
-            string query = "Select * from AboutPages";
-            SqlCommand cmd = new SqlCommand(query, cnn);
-            cnn.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
-            lstAbout.DataSource = dr;
+            DBFunctions db = new DBFunctions("Select * from AboutPages");
+            lstAbout.DataSource = db.getData();
             lstAbout.DataBind();
-            cnn.Close();
+            db.close();
+
         }
     }
 }

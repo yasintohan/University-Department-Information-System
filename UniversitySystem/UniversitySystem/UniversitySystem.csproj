@@ -141,6 +141,7 @@
     <Compile Include="Admin\People.aspx.designer.cs">
       <DependentUpon>People.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DBFunctions.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

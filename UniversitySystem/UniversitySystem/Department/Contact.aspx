@@ -12,29 +12,29 @@
         <h2 class="about-h">Contact</h2>
 
         <strong>Postal Address:</strong><br />
-
-        @foreach (var x in Model)
-        {
-
+         <asp:ListView runat="server" ID="lstContact">
+             <ItemTemplate>
+       
 
             <address>
-                @x.Adress<br />
+               <p><%#Eval("AdressC") %></p><br />
                 <abbr title="Phone">Tel:</abbr>
-                @x.Tel<br />
+                <p><%#Eval("TelC") %></p><br />
                 <abbr title="Phone">Fax:</abbr>
-                @x.Fax
+               <p><%#Eval("FaxC") %></p>
             </address>
 
             <address>
-                <strong>Department e-mail address:</strong>   <a href="mailto:@x.Mail">@x.Mail</a><br />
-                <strong>Facebook:</strong> <a href="@x.Facebook">@x.Facebook</a><br />
-                <strong>Twitter:</strong> <a href="@x.Twitter">@x.Twitter</a><br />
-                <strong>LinkedIn:</strong> <a href="@x.Linkedin">@x.Linkedin</a><br />
-                <strong>Youtube:</strong> <a href="@x.Youtube">@x.Youtube</a><br />
+                <strong>Department e-mail address:</strong>   <a href="mailto:<%#Eval("MailC") %>"><%#Eval("MailC") %></a><br />
+                <strong>Facebook:</strong> <a href="<%#Eval("Facebook") %>"><%#Eval("Facebook") %></a><br />
+                <strong>Twitter:</strong> <a href=<%#Eval("Twitter") %>"><%#Eval("Twitter") %></a><br />
+                <strong>LinkedIn:</strong> <a href="<%#Eval("Linkedin") %>"><%#Eval("Linkedin") %></a><br />
+                <strong>Youtube:</strong> <a href="<%#Eval("Youtube") %>"><%#Eval("Youtube") %></a><br />
             </address>
             
-        }
-
+        
+         </ItemTemplate>
+         </asp:ListView>
     </div>
 
 
