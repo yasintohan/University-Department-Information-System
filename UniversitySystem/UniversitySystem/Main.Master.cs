@@ -11,7 +11,19 @@ namespace UniversitySystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            getData();
+        }
+
+        private void getData()
+        {
+
+            DBFunctions db = new DBFunctions("Select * from SocialIcons");
+            lstData.DataSource = db.getData();
+            lstData.DataBind();
+            db.close();
+
+
         }
     }
 }
