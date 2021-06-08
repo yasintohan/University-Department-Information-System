@@ -12,6 +12,27 @@ namespace UniversitySystem.Department
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            getData();
         }
+
+        private void getData()
+        {
+
+            DBFunctions db = new DBFunctions("Select * from Classrooms");
+            lstClass.DataSource = db.getData();
+            lstClass.DataBind();
+            db.close();
+
+            db = new DBFunctions("Select * from Labs");
+            lstLab.DataSource = db.getData();
+            lstLab.DataBind();
+            db.close();
+
+            db = new DBFunctions("Select * from Offices");
+            lstOffice.DataSource = db.getData();
+            lstOffice.DataBind();
+            db.close();
+        }
+
     }
 }

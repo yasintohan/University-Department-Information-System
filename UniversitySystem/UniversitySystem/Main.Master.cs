@@ -31,7 +31,7 @@ namespace UniversitySystem
             lstInd1.DataBind();
             db2.close();
 
-            db = new DBFunctions("Select TOP 4 * from Carousels WHERE NOT Id = (Select TOP 1 Id from Carousels)");
+            db = new DBFunctions("Select TOP 3 * from Carousels WHERE NOT Id = (Select TOP 1 Id from Carousels)");
 
             lstCarousel2.DataSource = db.getData();
             lstCarousel2.DataBind();

@@ -36,30 +36,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">Classroom-B1</th>
-                            <td>1</td>
-                            <td>36</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Classroom-B1</th>
-                            <td>1</td>
-                            <td>36</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Classroom-B1</th>
-                            <td>1</td>
-                            <td>36</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
+                            <asp:ListView runat="server" ID="lstClass">
+                                <ItemTemplate>
+                                       <tr>
+                                            <th scope="row"><%#Eval("Description") %></th>
+                                            <td><%#Eval("Floor") %></td>
+                                            <td><%#Eval("Capacity") %></td>
+                                            <td><%#Eval("Projector") %></td>
+                                            <td><%#Eval("Blackboard") %></td>
+                                            <td><img class="img-responsive" src="<%#Eval("Image") %>" /></td>
+                                        </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                       
 
                     </tbody>
 
@@ -95,43 +84,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">Lab-01</th>
-                            <td>2</td>
-                            <td>61 PC</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lab-01</th>
-                            <td>2</td>
-                            <td>61 PC</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lab-01</th>
-                            <td>2</td>
-                            <td>61 PC</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Lab-01</th>
-                            <td>2</td>
-                            <td>61 PC</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><img class="img-responsive" src="~/Images/Class_B1_icon.jpg" /></td>
-                        </tr>
-
+                         <asp:ListView runat="server" ID="lstLab">
+                                <ItemTemplate>
+                                        <tr>
+                                            <th scope="row"><%#Eval("Description") %></th>
+                                            <td><%#Eval("Floor") %></td>
+                                            <td><%#Eval("Computer") %></td>
+                                            <td><%#Eval("Projector") %></td>
+                                            <td><%#Eval("Blackboard") %></td>
+                                            <td><%#Eval("AirConditioner") %></td>
+                                            <td><img class="img-responsive" src="<%#Eval("Image") %>" /></td>
+                                        </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                       
+                        
 
                     </tbody>
 
@@ -151,7 +118,6 @@
                 Offices
             </h3>
 
-
             <div class="col-lg-4 co-md-6 col-sm-12">
                 <div class="table-responsive">
                     <table class="table table-striped table-sm ">
@@ -163,16 +129,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12</td>
-                                <td>x</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12</td>
-                                <td>x</td>
-                            </tr>
+                            <asp:ListView runat="server" ID="lstOffice">
+                                <ItemTemplate>
+                                       <tr>
+                                            <th scope="row"><%#Eval("Name") %></th>
+                                            <td><%#Eval("Floor") %></td>
+                                            <td><%#Eval("MeetingRoom") %></td>
+                                        </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            
 
 
                         </tbody>
