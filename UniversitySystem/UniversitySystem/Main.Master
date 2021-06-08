@@ -131,58 +131,58 @@
                 <div id="mogo-slider" class="carousel slide container" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <h2 class="mogo-slider-title">
-                                <span class="mogo-slider-sub">Creative Template</span>
-                                Welcome <br>to MoGo
-                            </h2>
-                            <a href="#" class="slider-btn">Learn more</a>
-                        </div>
-                        <div class="item">
-                            <h2 class="mogo-slider-title">
-                                <span class="mogo-slider-sub">Creative Template</span>
-                                We Are <br>Creative
-                            </h2>
-                            <a href="#" class="slider-btn">Learn more</a>
-                        </div>
-                        <div class="item">
-                            <h2 class="mogo-slider-title">
-                                <span class="mogo-slider-sub">Responsive Design</span>
-                                Responsive <br> Web Template
-                            </h2>
-                            <a href="#" class="slider-btn">Learn more</a>
-                        </div>
-                        <div class="item">
-                            <h2 class="mogo-slider-title">
-                                <span class="mogo-slider-sub">Strong Team</span>
-                                We Have<br>Strong Team
-                            </h2>
-                            <a href="#" class="slider-btn">Learn more</a>
-                        </div>
-                    </div>
+
+                            <asp:ListView runat="server" ID="lstCarousel1">
+                                <ItemTemplate>
+                                    <div class="item active">
+                                        <h3 class="mogo-slider-title">
+                                            <span class="mogo-slider-sub"><%#Eval("SubTitle") %></span>
+                                            <%#Eval("Title") %>
+                                        </h3>
+                                        <p><%#Eval("Description") %></p>
+                                        <a href="#" class="slider-btn">Learn more</a>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:ListView>
+
+                         <asp:ListView runat="server" ID="lstCarousel2">
+                                <ItemTemplate>
+                                    <div class="item">
+                                        <h3 class="mogo-slider-title">
+                                            <span class="mogo-slider-sub"><%#Eval("SubTitle") %></span>
+                                            <%#Eval("Title") %>
+                                        </h3>
+                                        <p><%#Eval("Description") %></p>
+                                        <a href="#" class="slider-btn">Learn more</a>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:ListView>
+
+
 
                     <!-- Indicators -->
                     <ul class="carousel-indicators clearfix">
-                        <li data-target="#mogo-slider" data-slide-to="0" class="active">
-                            <div class="inner">
-                                <span class="number">01</span> intro
-                            </div>
-                        </li>
-                        <li data-target="#mogo-slider" data-slide-to="1">
-                            <div class="inner">
-                                <span class="number">02</span> work
-                            </div>
-                        </li>
-                        <li data-target="#mogo-slider" data-slide-to="2">
-                            <div class="inner">
-                                <span class="number">03</span> about
-                            </div>
-                        </li>
-                        <li data-target="#mogo-slider" data-slide-to="3">
-                            <div class="inner">
-                                <span class="number">04</span> contacts
-                            </div>
-                        </li>
+
+                         <asp:ListView runat="server" ID="lstInd1">
+                                <ItemTemplate>
+                                     <li data-target="#mogo-slider" data-slide-to="0" class="active">
+                                        <div class="inner">
+                                            <span class="number"></span> 
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:ListView>
+
+                       <asp:ListView runat="server" ID="lstInd2">
+                                <ItemTemplate>
+                                      <li data-target="#mogo-slider" data-slide-to="<%#Container.DisplayIndex + 1 %>">
+                                        <div class="inner">
+                                            <span class="number"></span> 
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:ListView>
+
                     </ul>
                 </div><!--end slider section-->
             </div>

@@ -23,7 +23,24 @@ namespace UniversitySystem
             lstData.DataBind();
             db.close();
 
-     
+            DBFunctions db2 = new DBFunctions("Select TOP 1 * from Carousels");
+            lstCarousel1.DataSource = db2.getData();
+            lstCarousel1.DataBind();
+            db2.close();
+            lstInd1.DataSource = db2.getData();
+            lstInd1.DataBind();
+            db2.close();
+
+            db = new DBFunctions("Select TOP 4 * from Carousels WHERE NOT Id = (Select TOP 1 Id from Carousels)");
+
+            lstCarousel2.DataSource = db.getData();
+            lstCarousel2.DataBind();
+            db.close();
+            lstInd2.DataSource = db.getData();
+            lstInd2.DataBind();
+            db.close();
+
+
         }
     }
 }
