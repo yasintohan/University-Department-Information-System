@@ -8,7 +8,7 @@
 
         <div class="col-lg-12">
 
-            <h2 class="about-h">@ViewBag.Title</h2>
+            <h2 class="about-h">Researh Projects</h2>
 
 
         </div>
@@ -32,30 +32,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
+                         <asp:ListView runat="server" ID="lstCount">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("date") %></th>
+                                        <td><%#Eval("Count") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                        
 
                     </tbody>
 
@@ -87,66 +72,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>University Information System</td>
-                        <td>BAP</td>
-                        <td>123456789</td>
-                        <td>2021</td>
-                        <td>12 months</td>
-                        <td>10.000 $</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
+                    <asp:ListView runat="server" ID="lstData">
+                                <ItemTemplate>
+                                   <tr>
+                                        <th scope="row"><%#Eval("Id") %></th>
+                                        <td><%#Eval("Subject") %></td>
+                                        <td><%#Eval("Type") %></td>
+                                        <td><%#Eval("ProjectNo") %></td>
+                                        <td><%#Eval("date") %></td>
+                                        <td><%#Eval("Duration") %></td>
+                                        <td><%#Eval("Budget") %></td>
+                                        <td><%#Eval("Director") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+
+                    
                 </tbody>
 
             </table>
