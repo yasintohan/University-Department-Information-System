@@ -25,20 +25,34 @@ namespace UniversitySystem.Admin
 
         protected void loginBtn_Click(object sender, EventArgs e)
         {
-            Session.Timeout = 120;
 
-
-            if (txtUserName.Text == "yasin" & txtPassword.Text == "123456")
+            if (!String.IsNullOrEmpty(txtUserName.Text) && !String.IsNullOrEmpty(txtPassword.Text))
             {
 
-                Session.Add("Username", txtUserName.Text);
+                DBFunctions db = new DBFunctions();
+                if (db.testLogin(txtUserName.Text, txtPassword.Text))
+                {
+                    if(rememberCheck.Checked)
+                        Session.Timeout = 1200;
+                    else
+                        Session.Timeout = 10;
 
-                Response.Redirect("../Admin/index.aspx");
+                    Session.Add("Username", txtUserName.Text);
+
+                    Response.Redirect("../Admin/index.aspx");
+
+                }
+                else
+                {
+                    statusLabel.Text = "Login Error.";
+                }
+
+                db.close();
 
             }
             else
             {
-                statusLabel.Text = "Login Error.";
+                statusLabel.Text = "Please fill blanks.";
             }
         }
     }

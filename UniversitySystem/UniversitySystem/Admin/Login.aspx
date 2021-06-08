@@ -44,7 +44,7 @@
                 <div class="form-check">
 
                 <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
+                    <asp:CheckBox ID="rememberCheck" runat="server" class="form-check-input"/>
                   <small>Remember Me</small>
                 </label>
                 <asp:Button OnClick="loginBtn_Click" class="btn btn-login float-right" ID="loginBtn" runat="server" Text="Submit" />
