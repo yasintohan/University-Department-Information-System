@@ -207,30 +207,27 @@
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <h5>Main Links</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Department</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Undergraduate</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Graduate</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Research</a></li>
+                            <li><a href="../"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="../Department/About.aspx"><i class="fa fa-angle-double-right"></i>Department</a></li>
+                            <li><a href="../Educational/Courses.aspx"><i class="fa fa-angle-double-right"></i>Educational</a></li>
+                            <li><a href="../Research/ResearchAreas.aspx"><i class="fa fa-angle-double-right"></i>Research</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <h5>Department</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>People</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Infrastructure</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Events</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                            <li><a href="../Department/About.aspx"><i class="fa fa-angle-double-right"></i>About</a></li>
+                            <li><a href="../Department/People.aspx"><i class="fa fa-angle-double-right"></i>People</a></li>
+                            <li><a href="../Department/Infrastructure.aspx"><i class="fa fa-angle-double-right"></i>Infrastructure</a></li>
+                            <li><a href="../Department/Events.aspx"><i class="fa fa-angle-double-right"></i>Events</a></li>
+                            <li><a href="../Department/Contact.aspx"><i class="fa fa-angle-double-right"></i>Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Undergraduate</h5>
+                        <h5>Educational</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Courseware</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Course List</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Curriculum</a></li>
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Senior Projects</a></li>
+                            <li><a href="../Educational/Courses.aspx"><i class="fa fa-angle-double-right"></i>Courses</a></li>
+                            <li><a href="../Educational/SeniorProjects.aspx"><i class="fa fa-angle-double-right"></i>Senior Projects</a></li>
                         </ul>
                     </div>
                 </div>
@@ -239,7 +236,7 @@
                         <ul class="list-unstyled list-inline social text-center">
                             <asp:ListView runat="server" ID="lstData">
                                 <ItemTemplate>
-                                    <li class="list-inline-item"><a href="<%#Eval("Link") %>"><i class="<%#Eval("IconName") %>"></i></a></li>
+                                    <li class="list-inline-item"><a href="<%#Eval("Link") %>"><i class="fa fa-<%#Eval("IconName") %>"></i></a></li>
                                 </ItemTemplate>
                             </asp:ListView>
                         </ul>

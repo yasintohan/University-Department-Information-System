@@ -62,12 +62,12 @@
 
                 <ul>
 
-
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                    <asp:ListView runat="server" ID="lstData">
+                        <ItemTemplate>
+                             <li><%#Eval("datep") %><i class="fa fa-calendar-o" aria-hidden="true"></i> <%#Eval("Title") %> </li>
+                            
+                        </ItemTemplate>
+                    </asp:ListView>
 
 
                 </ul>
@@ -93,12 +93,12 @@
 
                 <ul>
 
-
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                    <asp:ListView runat="server" ID="lstEvents">
+                        <ItemTemplate>
+                             <li><%#Eval("datep") %><i class="fa fa-calendar-o" aria-hidden="true"></i> <%#Eval("Title") %> </li>
+                            
+                        </ItemTemplate>
+                    </asp:ListView>
 
 
                 </ul>
@@ -125,12 +125,12 @@
 
                 <ul>
 
-
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
-                    <li>Operations Meeting <i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+                     <asp:ListView runat="server" ID="lstNews">
+                        <ItemTemplate>
+                             <li><%#Eval("datep") %><i class="fa fa-calendar-o" aria-hidden="true"></i> <%#Eval("Title") %> </li>
+                            
+                        </ItemTemplate>
+                    </asp:ListView>
 
 
                 </ul>

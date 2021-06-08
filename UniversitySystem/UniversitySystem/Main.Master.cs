@@ -23,7 +23,7 @@ namespace UniversitySystem
             lstData.DataBind();
             db.close();
 
-
+     
         }
     }
 }
