@@ -167,7 +167,7 @@
                                 <ItemTemplate>
                                      <li data-target="#mogo-slider" data-slide-to="0" class="active">
                                         <div class="inner">
-                                            <span class="number"></span> 
+                                            <span class="number"><%#Eval("MiniTitle") %></span> 
                                         </div>
                                     </li>
                                 </ItemTemplate>
@@ -177,7 +177,7 @@
                                 <ItemTemplate>
                                       <li data-target="#mogo-slider" data-slide-to="<%#Container.DisplayIndex + 1 %>">
                                         <div class="inner">
-                                            <span class="number"></span> 
+                                            <span class="number"><%#Eval("MiniTitle") %></span> 
                                         </div>
                                     </li>
                                 </ItemTemplate>

@@ -107,7 +107,7 @@
 
 
                                         <li><a href="../Admin/Events.aspx"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
-                                        <li><a href="../Admin/Events.aspx"><span class="glyphicon glyphicon-cloud"></span> Contact</a></li>
+                                        <li><a href="../Admin/Contact.aspx"><span class="glyphicon glyphicon-cloud"></span> Contact</a></li>
 
                                     </ul>
                                 </div>
@@ -154,6 +154,7 @@
                             </div>
                         </li>
                         <li><a href="../Admin/Social.aspx"><span class="glyphicon glyphicon-cloud"></span> Users</a></li>
+                        <li><a href="../Admin/Carousel.aspx"><span class="glyphicon glyphicon-cloud"></span> Carousel</a></li>
                         <li><a href="../Admin/Social.aspx"><span class="glyphicon glyphicon-cloud"></span> Social Icons</a></li>
                         <li><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></li>
 

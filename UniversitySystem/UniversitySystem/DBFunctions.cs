@@ -88,8 +88,35 @@ namespace UniversitySystem
             cmd.ExecuteNonQuery();
             cnn.Close();
         }
-        
-            
+
+        public void UpdateCarousel(string id, string title, string sub, string desc, string mini)
+        {
+            cmd = new SqlCommand("Update Carousels SET Title = @p1, SubTitle = @p2, Description = @p3, MiniTitle = @p4 Where Id = @p5", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", sub);
+            cmd.Parameters.AddWithValue("@p3", desc);
+            cmd.Parameters.AddWithValue("@p4", mini);
+            cmd.Parameters.AddWithValue("@p5", id);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+        public void UpdateContact(string adress, string tel, string fax, string mail, string face, string twit, string linked, string youtube)
+        {
+            cmd = new SqlCommand("Update Contacts SET AdressC = @p1, TelC = @p2, FaxC = @p3, MailC = @p4, Facebook = @p5, Twitter = @p6, Linkedin = @p7, Youtube = @p8 Where 1=1", cnn);
+            cmd.Parameters.AddWithValue("@p1", adress);
+            cmd.Parameters.AddWithValue("@p2", tel);
+            cmd.Parameters.AddWithValue("@p3", fax);
+            cmd.Parameters.AddWithValue("@p4", mail);
+            cmd.Parameters.AddWithValue("@p5", face);
+            cmd.Parameters.AddWithValue("@p6", twit);
+            cmd.Parameters.AddWithValue("@p7", linked);
+            cmd.Parameters.AddWithValue("@p8", youtube);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
 
     }
 }
