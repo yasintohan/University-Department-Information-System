@@ -22,10 +22,17 @@
     </asp:ContentPlaceHolder>
     <link href="Content/style-admin.css" rel="stylesheet" />
 
+     <style>
+     .col-centered {
+            float: none;
+            margin: 0 auto;
+        }
+    </style>
+
 </head>
 <body>
 
-
+    <form runat="server">
 
     <div class="row">
         <!-- uncomment code for absolute positioning tweek see top comment in css -->
@@ -47,7 +54,7 @@
 
                         <!-- Brand -->
                         <div class="brand-name-wrapper">
-                            <a class="navbar-brand site-logo" href="@Url.Action("Index", "Home")">
+                            <a class="navbar-brand site-logo" href="../">
                                 <img class="img-responsive" src="../Images/estuLogo.png" alt="Department of Computer Engineering">
                                 <span style="font-size: 12px;">Department of Computer Engineering</span>
                             </a>
@@ -61,9 +68,9 @@
                 <!-- Main Menu -->
                 <div class="side-menu-container">
                     <ul class="nav navbar-nav">
-                        <li><a href="@Url.Action("Index", "Admin")"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li><a href="@Url.Action("People", "Admin")"><span class="glyphicon glyphicon-send"></span> People</a></li>
-                        <li><a href="@Url.Action("Events", "Admin")"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
+                        <li><a href="../Admin/index.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> People</a></li>
+                        <li><a href="../Admin/Events.aspx"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
 
                         <!-- Dropdown-->
                         <li class="panel panel-default" id="dropdown">
@@ -99,7 +106,7 @@
                         </li>
 
                         <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
-                        <li><form runat="server"><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></form></li>
+                        <li><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></li>
 
                     </ul>
                     
@@ -128,7 +135,7 @@
 
 
 
-
+        </form>
 
 
 

@@ -71,6 +71,7 @@
     <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\People.aspx" />
+    <Content Include="Admin\Social.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
     <Content Include="Content\style.css" />
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Admin\People.aspx.designer.cs">
       <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Social.aspx.cs">
+      <DependentUpon>Social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Social.aspx.designer.cs">
+      <DependentUpon>Social.aspx</DependentUpon>
     </Compile>
     <Compile Include="DBFunctions.cs" />
     <Compile Include="Default.aspx.cs">

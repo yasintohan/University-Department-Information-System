@@ -35,7 +35,7 @@ namespace UniversitySystem.Admin
                     if(rememberCheck.Checked)
                         Session.Timeout = 1200;
                     else
-                        Session.Timeout = 10;
+                        Session.Timeout = 60;
 
                     Session.Add("Username", txtUserName.Text);
 

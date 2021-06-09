@@ -45,6 +45,17 @@ namespace UniversitySystem
             }
         }
 
+        public void AddSocialIcon(string iconname, string link)
+        {
+            cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[1].ConnectionString);
+            cmd = new SqlCommand("Insert into SocialIcons (IconName, Link) values (@iconname, @linktxt)", cnn);
+            cmd.Parameters.AddWithValue("@iconname", iconname);
+            cmd.Parameters.AddWithValue("@linktxt", link);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
         public SqlDataReader getData()
         {
             cnn.Open();
