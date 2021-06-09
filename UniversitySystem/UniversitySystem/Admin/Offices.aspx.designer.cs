@@ -11,7 +11,7 @@ namespace UniversitySystem.Admin
 {
 
 
-    public partial class Events
+    public partial class Offices
     {
 
         /// <summary>
@@ -24,40 +24,31 @@ namespace UniversitySystem.Admin
         protected global::System.Web.UI.WebControls.ListView lstData;
 
         /// <summary>
-        /// titleTxt control.
+        /// nameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox titleTxt;
+        protected global::System.Web.UI.WebControls.TextBox nameTxt;
 
         /// <summary>
-        /// dateTxt control.
+        /// floorTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dateTxt;
+        protected global::System.Web.UI.WebControls.TextBox floorTxt;
 
         /// <summary>
-        /// placeTxt control.
+        /// meetingCheck control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox placeTxt;
-
-        /// <summary>
-        /// partiTxt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox partiTxt;
+        protected global::System.Web.UI.WebControls.CheckBox meetingCheck;
 
         /// <summary>
         /// addBtn control.

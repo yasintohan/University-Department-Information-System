@@ -11,7 +11,7 @@ namespace UniversitySystem.Admin
 {
 
 
-    public partial class Events
+    public partial class Announces
     {
 
         /// <summary>
@@ -33,31 +33,31 @@ namespace UniversitySystem.Admin
         protected global::System.Web.UI.WebControls.TextBox titleTxt;
 
         /// <summary>
-        /// dateTxt control.
+        /// DescriptionTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dateTxt;
+        protected global::System.Web.UI.WebControls.TextBox DescriptionTxt;
 
         /// <summary>
-        /// placeTxt control.
+        /// pdateTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox placeTxt;
+        protected global::System.Web.UI.WebControls.TextBox pdateTxt;
 
         /// <summary>
-        /// partiTxt control.
+        /// fdateTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox partiTxt;
+        protected global::System.Web.UI.WebControls.TextBox fdateTxt;
 
         /// <summary>
         /// addBtn control.

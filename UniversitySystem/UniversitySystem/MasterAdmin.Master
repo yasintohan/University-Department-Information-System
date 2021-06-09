@@ -69,7 +69,7 @@
                 <div class="side-menu-container">
                     <ul class="nav navbar-nav">
                         <li><a href="../Admin/index.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-
+                        <li><a href="../Admin/Announces.aspx"><span class="glyphicon glyphicon-home"></span> Announces</a></li>
                         
 
                         <!-- Dropdown-->

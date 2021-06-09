@@ -68,11 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\About.aspx" />
+    <Content Include="Admin\Announces.aspx" />
     <Content Include="Admin\Carousel.aspx" />
     <Content Include="Admin\Contact.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Offices.aspx" />
     <Content Include="Admin\People.aspx" />
     <Content Include="Admin\ResearchAreas.aspx" />
     <Content Include="Admin\Social.aspx" />
@@ -98,7 +100,6 @@
     <Content Include="Images\logo_mudek.jpg" />
     <Content Include="Images\map_v2.png" />
     <Content Include="Research\ResearchAreas.aspx" />
-    <Content Include="Research\ResearchProjects.aspx" />
     <Content Include="Scripts\admin.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="Admin\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Announces.aspx.cs">
+      <DependentUpon>Announces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Announces.aspx.designer.cs">
+      <DependentUpon>Announces.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Carousel.aspx.cs">
       <DependentUpon>Carousel.aspx</DependentUpon>
@@ -159,6 +167,13 @@
     </Compile>
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Offices.aspx.cs">
+      <DependentUpon>Offices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Offices.aspx.designer.cs">
+      <DependentUpon>Offices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\People.aspx.cs">
       <DependentUpon>People.aspx</DependentUpon>
@@ -266,13 +281,6 @@
     </Compile>
     <Compile Include="Research\ResearchAreas.aspx.designer.cs">
       <DependentUpon>ResearchAreas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Research\ResearchProjects.aspx.cs">
-      <DependentUpon>ResearchProjects.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Research\ResearchProjects.aspx.designer.cs">
-      <DependentUpon>ResearchProjects.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -21,13 +21,13 @@
              <ItemTemplate>
         <div class="col-sm-6 col-md-3 col-lg-2 single-team">
             <div class="inner">
-                <a href="@Url.Action("PeoplePage", "Department",  new { id = x.Id })">
+                
                     <div class="team-img">
 
                         <img src="<%#Eval("Image") %>" alt="@x.Name">
 
                     </div>
-                </a>
+                
                 <div class="team-content">
                     <h4><%#Eval("Name") %></h4>
                     <h5 style="min-height:50px"><%#Eval("Degree") %></h5>

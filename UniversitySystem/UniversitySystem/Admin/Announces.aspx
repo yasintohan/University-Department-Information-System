@@ -1,25 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Events.aspx.cs" Inherits="UniversitySystem.Admin.Events" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Announces.aspx.cs" Inherits="UniversitySystem.Admin.Announces" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
 
-    <h2 class="about-h">Events</h2>
+    
+    <h2 class="about-h">Announces</h2>
 
 
 <div class="col-lg-12 form-bg">
 
     <!-- Form Name -->
-    <legend>Events List</legend>
+    <legend>Announces List</legend>
     <div class="table-responsive">
         <table class="table table-striped table-sm ">
             <thead>
                 <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Event Title</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Place</th>
-                    <th scope="col">Participants</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Publish Date</th>
+                    <th scope="col">Finish Date</th>
+                    <th scope="col">Author</th>
                     <th scope="col">Crud</th>
                 </tr>
             </thead>
@@ -30,9 +32,10 @@
                                     <tr>
                                         <td><%#Eval("Id") %></td>
                                         <td><%#Eval("Title") %></td>
+                                        <td><%#Eval("Description") %></td>
                                         <td><%#Eval("datep") %></td>
-                                        <td><%#Eval("Place") %></td>
-                                        <td><%#Eval("Participants") %></td>
+                                        <td><%#Eval("datef") %></td>
+                                        <td><%#Eval("Author") %></td>
                                         <td>
                                             <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
                                             <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
@@ -66,7 +69,7 @@
             
 
                 <!-- Form Name -->
-                <legend>Event Adding Form</legend>
+                <legend>Announces Adding Form</legend>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-centered">
                 <!-- Text input-->
@@ -78,29 +81,32 @@
                     
                 </div>
 
+                       <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label">Description</label>
+                        <asp:TextBox ID="DescriptionTxt" runat="server" placeholder="Description" class="form-control input-md"></asp:TextBox>
+                        
+                    
+                </div>
+                
+
                     <!-- Text input-->
                 <div class="form-group">
-                    <label class="control-label">Date</label>
-                        <asp:TextBox ID="dateTxt" runat="server" placeholder="1" class="form-control input-md" TextMode="Date"></asp:TextBox>
+                    <label class="control-label">Publish Date</label>
+                        <asp:TextBox ID="pdateTxt" runat="server" placeholder="1" class="form-control input-md" TextMode="Date"></asp:TextBox>
                         
                     
                 </div>
 
                       <!-- Text input-->
                 <div class="form-group">
-                    <label class="control-label">Place</label>
-                        <asp:TextBox ID="placeTxt" runat="server" placeholder="Place" class="form-control input-md" ></asp:TextBox>
+                    <label class="control-label">Finish Date</label>
+                        <asp:TextBox ID="fdateTxt" runat="server" placeholder="1" class="form-control input-md" TextMode="Date"></asp:TextBox>
                         
                     
                 </div>
-                
-                      <!-- Text input-->
-                <div class="form-group">
-                    <label class="control-label">Participants</label>
-                        <asp:TextBox ID="partiTxt" runat="server" placeholder="Place" class="form-control input-md" ></asp:TextBox>
-                        
-                    
-                </div>
+
+                  
                 
 
                 <!-- Button (Double) -->
@@ -114,8 +120,6 @@
         </form>
 
     </div>
-
-
 
 
 </asp:Content>

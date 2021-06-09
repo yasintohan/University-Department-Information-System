@@ -27,7 +27,7 @@ namespace UniversitySystem
             cmd = new SqlCommand(querystr, cnn);
         }
 
-        public Boolean testLogin(string u, string p)
+        public int testLogin(string u, string p)
         {
             cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[1].ConnectionString);
 
@@ -39,10 +39,10 @@ namespace UniversitySystem
 
             if (dr.Read())
             {
-                return true;
+                return Int32.Parse(dr["user_id"].ToString());
             } else
             {
-                return false;
+                return -1;
             }
         }
 
@@ -60,6 +60,43 @@ namespace UniversitySystem
         {
             cmd = new SqlCommand("Insert into ResearchAreas (Area) values (@areaname)", cnn);
             cmd.Parameters.AddWithValue("@areaname", area);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+        public void AddOffice(string name, string floor, Boolean meeting)
+        {
+            cmd = new SqlCommand("Insert into Offices (Name, Floor, MeetingRoom) values (@p1, @p2, @p3)", cnn);
+            cmd.Parameters.AddWithValue("@p1", name);
+            cmd.Parameters.AddWithValue("@p2", floor);
+            cmd.Parameters.AddWithValue("@p3", meeting);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+        public void AddEvent(string title, string date, string place, string parti)
+        {
+            cmd = new SqlCommand("Insert into Events (Title, Date, Place, Participants) values (@p1, @p2, @p3, @p4)", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", date);
+            cmd.Parameters.AddWithValue("@p3", place);
+            cmd.Parameters.AddWithValue("@p4", parti);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+
+        public void AddAnnounce(string title, string desc, string datep, string datef, string id)
+        {
+            cmd = new SqlCommand("Insert into Announces (Title, Description, PublishDate, FinishDate, Author_Id) values (@p1, @p2, @p3, @p4, @p5)", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", desc);
+            cmd.Parameters.AddWithValue("@p3", datep);
+            cmd.Parameters.AddWithValue("@p4", datef);
+            cmd.Parameters.AddWithValue("@p5", id);
             cnn.Open();
             cmd.ExecuteNonQuery();
             cnn.Close();

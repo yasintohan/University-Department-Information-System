@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace UniversitySystem.Admin
 {
-    public partial class Events : System.Web.UI.Page
+    public partial class Offices : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +17,7 @@ namespace UniversitySystem.Admin
         private void getData()
         {
 
-            DBFunctions db = new DBFunctions("Select *, FORMAT (Date, 'dd/MM/yyyy ') as datep from Events");
+            DBFunctions db = new DBFunctions("Select * from Offices");
             lstData.DataSource = db.getData();
             lstData.DataBind();
             db.close();
@@ -26,15 +26,13 @@ namespace UniversitySystem.Admin
 
         protected void addBtn_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(titleTxt.Text) && !String.IsNullOrEmpty(dateTxt.Text) && !String.IsNullOrEmpty(placeTxt.Text) && !String.IsNullOrEmpty(partiTxt.Text))
+            if (!String.IsNullOrEmpty(nameTxt.Text) && !String.IsNullOrEmpty(floorTxt.Text))
             {
                 DBFunctions db = new DBFunctions();
-                db.AddEvent(titleTxt.Text, dateTxt.Text, placeTxt.Text, partiTxt.Text);
+                db.AddOffice(nameTxt.Text, floorTxt.Text, meetingCheck.Checked);
                 getData();
-                titleTxt.Text = "";
-                dateTxt.Text = "";
-                placeTxt.Text = "";
-                partiTxt.Text = "";
+                nameTxt.Text = "";
+                floorTxt.Text = "";
 
             }
 

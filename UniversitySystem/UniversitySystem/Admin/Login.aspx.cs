@@ -30,15 +30,17 @@ namespace UniversitySystem.Admin
             {
 
                 DBFunctions db = new DBFunctions();
-                if (db.testLogin(txtUserName.Text, txtPassword.Text))
+                int id = db.testLogin(txtUserName.Text, txtPassword.Text);
+                if (id != -1)
                 {
                     if(rememberCheck.Checked)
                         Session.Timeout = 1200;
                     else
                         Session.Timeout = 60;
 
-                    Session.Add("Username", txtUserName.Text);
+                    Session.Add("User_id", id);
 
+                    Session.Add("Username", txtUserName.Text);
                     Response.Redirect("../Admin/index.aspx");
 
                 }
