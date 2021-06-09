@@ -70,7 +70,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="../Admin/index.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li><a href="../Admin/Announces.aspx"><span class="glyphicon glyphicon-home"></span> Announces</a></li>
-                        
+                        <li><a href="../Admin/News.aspx"><span class="glyphicon glyphicon-home"></span> News</a></li>
 
                         <!-- Dropdown-->
                         <li class="panel panel-default" id="dropdown">
@@ -96,9 +96,9 @@
                                             <div id="dropdowninf" class="panel-collapse collapse">
                                                 <div class="panel-body">
                                                     <ul class="nav navbar-nav">
-                                                        <li><a href="../Admin/ResearchAreas.aspx"><span class="glyphicon glyphicon-send"></span> Classrooms</a></li>
-                                                        <li><a href="../Admin/ResearchAreas.aspx"><span class="glyphicon glyphicon-send"></span> Labs</a></li>
-                                                        <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> Offices</a></li>
+                                                        <li><a href="../Admin/Classrooms.aspx"><span class="glyphicon glyphicon-send"></span> Classrooms</a></li>
+                                                        <li><a href="../Admin/Labs.aspx"><span class="glyphicon glyphicon-send"></span> Labs</a></li>
+                                                        <li><a href="../Admin/Offices.aspx"><span class="glyphicon glyphicon-send"></span> Offices</a></li>
 
                                                     </ul>
                                                 </div>

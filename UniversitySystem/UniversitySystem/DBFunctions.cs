@@ -102,6 +102,33 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddNews(string title, string desc, string datep)
+        {
+            cmd = new SqlCommand("Insert into News (Title, Description, PublishDate) values (@p1, @p2, @p3)", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", desc);
+            cmd.Parameters.AddWithValue("@p3", datep);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+
+        public void AddLabs(string Description, string floor, string computer, Boolean Projector, Boolean Blackboard, Boolean AirConditioner, string image)
+        {
+            cmd = new SqlCommand("Insert into Labs (Description, Floor, Computer, Projector, Blackboard, AirConditioner, Image) values (@p1, @p2, @p3, @p4, @p5, @p6, @p7)", cnn);
+            cmd.Parameters.AddWithValue("@p1", Description);
+            cmd.Parameters.AddWithValue("@p2", floor);
+            cmd.Parameters.AddWithValue("@p3", computer);
+            cmd.Parameters.AddWithValue("@p4", Projector);
+            cmd.Parameters.AddWithValue("@p5", Blackboard);
+            cmd.Parameters.AddWithValue("@p6", AirConditioner);
+            cmd.Parameters.AddWithValue("@p7", image);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
         public SqlDataReader getData()
         {
             cnn.Open();

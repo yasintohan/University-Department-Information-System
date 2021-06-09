@@ -73,7 +73,9 @@
     <Content Include="Admin\Contact.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\Labs.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\News.aspx" />
     <Content Include="Admin\Offices.aspx" />
     <Content Include="Admin\People.aspx" />
     <Content Include="Admin\ResearchAreas.aspx" />
@@ -161,12 +163,26 @@
     <Compile Include="Admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Labs.aspx.cs">
+      <DependentUpon>Labs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Labs.aspx.designer.cs">
+      <DependentUpon>Labs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Offices.aspx.cs">
       <DependentUpon>Offices.aspx</DependentUpon>
@@ -298,7 +314,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\Labs\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,46 +1,48 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Offices.aspx.cs" Inherits="UniversitySystem.Admin.Offices" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="UniversitySystem.Admin.News" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-       <h2 class="about-h">Offices</h2>
+
+        
+    <h2 class="about-h">News</h2>
 
 
 <div class="col-lg-12 form-bg">
 
     <!-- Form Name -->
-    <legend>Office List</legend>
-
-
+    <legend>News List</legend>
     <div class="table-responsive">
         <table class="table table-striped table-sm ">
             <thead>
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Floor</th>
-                    <th scope="col">Meeting Room</th>
+                    <th scope="col">No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Publish Date</th>
                     <th scope="col">Crud</th>
                 </tr>
             </thead>
             <tbody>
 
-                <asp:ListView runat="server" ID="lstData">
+                 <asp:ListView runat="server" ID="lstData">
                                 <ItemTemplate>
                                     <tr>
                                         <td><%#Eval("Id") %></td>
-                                        <td><%#Eval("Name") %></td>
-                                        <td><%#Eval("Floor") %></td>
-                                        <td><%#Eval("MeetingRoom") %></td>
+                                        <td><%#Eval("Title") %></td>
+                                        <td><%#Eval("Description") %></td>
+                                        <td><%#Eval("datep") %></td>
                                         <td>
+                                            <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                            <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
                                             <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
                                         </td>
                                     </tr>
                                 </ItemTemplate>
                             </asp:ListView>
                 
-                
-
+               
+               
 
 
             </tbody>
@@ -50,11 +52,12 @@
     </div>
 
 
+
 </div>
 
 
 
-    <div class="col-lg-12 form-bg">
+   <div class="col-lg-12 form-bg">
 
         
         
@@ -62,35 +65,37 @@
             
 
                 <!-- Form Name -->
-                <legend>Office Adding Form</legend>
+                <legend>News Adding Form</legend>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-centered">
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="control-label">Name</label>
-                        <asp:TextBox ID="nameTxt" runat="server" placeholder="Name" class="form-control input-md" required=""></asp:TextBox>
-                        <span class="help-block">E.g: Office 1</span>
+                    <label class="control-label">Title</label>
+                        <asp:TextBox ID="titleTxt" runat="server" placeholder="Title" class="form-control input-md"></asp:TextBox>
+                        <span class="help-block">E.g: Erasmus Meeting Event</span>
                         
                     
                 </div>
+
+                       <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label">Description</label>
+                        <asp:TextBox ID="DescriptionTxt" runat="server" placeholder="Description" class="form-control input-md"></asp:TextBox>
+                        
+                    
+                </div>
+                
 
                     <!-- Text input-->
                 <div class="form-group">
-                    <label class="control-label">Floor</label>
-                        <asp:TextBox ID="floorTxt" runat="server" placeholder="1" class="form-control input-md" required=""></asp:TextBox>
-                        <span class="help-block">E.g: 1</span>
+                    <label class="control-label">Publish Date</label>
+                        <asp:TextBox ID="pdateTxt" runat="server" placeholder="1" class="form-control input-md" TextMode="Date"></asp:TextBox>
                         
                     
                 </div>
 
-                    <!-- Text input-->
-                <div class="form-group">
-                    
-                        <asp:CheckBox ID="meetingCheck" runat="server"/> <label class="control-label">Meeting Room</label>
-                        
-                    
-                </div>
 
+                  
                 
 
                 <!-- Button (Double) -->
@@ -104,10 +109,6 @@
         </form>
 
     </div>
-        
-       
-
-
 
 
 </asp:Content>
