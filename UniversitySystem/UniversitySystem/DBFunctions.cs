@@ -129,6 +129,21 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+
+        public void AddClassroom(string Description, string floor, string capacity, Boolean Projector, Boolean Blackboard, string image)
+        {
+            cmd = new SqlCommand("Insert into Classrooms (Description, Floor, Capacity, Projector, Blackboard, Image) values (@p1, @p2, @p3, @p4, @p5, @p6)", cnn);
+            cmd.Parameters.AddWithValue("@p1", Description);
+            cmd.Parameters.AddWithValue("@p2", floor);
+            cmd.Parameters.AddWithValue("@p3", capacity);
+            cmd.Parameters.AddWithValue("@p4", Projector);
+            cmd.Parameters.AddWithValue("@p5", Blackboard);
+            cmd.Parameters.AddWithValue("@p6", image);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
         public SqlDataReader getData()
         {
             cnn.Open();

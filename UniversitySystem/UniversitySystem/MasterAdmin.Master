@@ -68,14 +68,14 @@
                 <!-- Main Menu -->
                 <div class="side-menu-container">
                     <ul class="nav navbar-nav">
-                        <li><a href="../Admin/index.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li><a href="../Admin/Announces.aspx"><span class="glyphicon glyphicon-home"></span> Announces</a></li>
-                        <li><a href="../Admin/News.aspx"><span class="glyphicon glyphicon-home"></span> News</a></li>
+                        <li><a href="../Admin/index.aspx"><span class="fa fa-home"></span> Home</a></li>
+                        <li><a href="../Admin/Announces.aspx"><span class="fa fa-bullhorn"></span> Announces</a></li>
+                        <li><a href="../Admin/News.aspx"><span class="fa fa-calendar"></span> News</a></li>
 
                         <!-- Dropdown-->
                         <li class="panel panel-default" id="dropdown">
                             <a data-toggle="collapse" href="#dropdown-lvl1">
-                                <span class="glyphicon glyphicon-user"></span> Department <span class="caret"></span>
+                                <span class="fa fa-building"></span> Department <span class="caret"></span>
                             </a>
 
                             <!-- Dropdown level 1 -->
@@ -83,22 +83,22 @@
                                 <div class="panel-body">
                                     <ul class="nav navbar-nav">
 
-                                        <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> People</a></li>
-                                        <li><a href="../Admin/About.aspx"><span class="glyphicon glyphicon-cloud"></span> About</a></li>
+                                        <li><a href="../Admin/People.aspx"><span class="fa fa-user"></span> People</a></li>
+                                        <li><a href="../Admin/About.aspx"><span class="fa fa-info-circle"></span> About</a></li>
                                         
                                          <!-- Dropdown-->
                                         <li class="panel panel-default" id="dropdown">
                                             <a data-toggle="collapse" href="#dropdowninf">
-                                                <span class="glyphicon glyphicon-user"></span> Infrastructures <span class="caret"></span>
+                                                <span class="fa fa-building"></span> Infrastructures <span class="caret"></span>
                                             </a>
 
                                             <!-- Dropdown level 1 -->
                                             <div id="dropdowninf" class="panel-collapse collapse">
                                                 <div class="panel-body">
                                                     <ul class="nav navbar-nav">
-                                                        <li><a href="../Admin/Classrooms.aspx"><span class="glyphicon glyphicon-send"></span> Classrooms</a></li>
-                                                        <li><a href="../Admin/Labs.aspx"><span class="glyphicon glyphicon-send"></span> Labs</a></li>
-                                                        <li><a href="../Admin/Offices.aspx"><span class="glyphicon glyphicon-send"></span> Offices</a></li>
+                                                        <li><a href="../Admin/Classrooms.aspx"><span class="fa fa-building"></span> Classrooms</a></li>
+                                                        <li><a href="../Admin/Labs.aspx"><span class="fa fa-building"></span> Labs</a></li>
+                                                        <li><a href="../Admin/Offices.aspx"><span class="fa fa-building"></span> Offices</a></li>
 
                                                     </ul>
                                                 </div>
@@ -106,8 +106,8 @@
                                         </li>
 
 
-                                        <li><a href="../Admin/Events.aspx"><span class="glyphicon glyphicon-cloud"></span> Events</a></li>
-                                        <li><a href="../Admin/Contact.aspx"><span class="glyphicon glyphicon-cloud"></span> Contact</a></li>
+                                        <li><a href="../Admin/Events.aspx"><span class="fa fa-calendar"></span> Events</a></li>
+                                        <li><a href="../Admin/Contact.aspx"><span class="fa fa-phone"></span> Contact</a></li>
 
                                     </ul>
                                 </div>
@@ -118,7 +118,7 @@
                         <!-- Dropdown-->
                         <li class="panel panel-default" id="dropdown">
                             <a data-toggle="collapse" href="#dropdown2">
-                                <span class="glyphicon glyphicon-user"></span> Educational <span class="caret"></span>
+                                <span class="fa fa-pencil-square-o"></span> Educational <span class="caret"></span>
                             </a>
 
                             <!-- Dropdown level 1 -->
@@ -126,36 +126,18 @@
                                 <div class="panel-body">
                                     <ul class="nav navbar-nav">
 
-                                       <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> Courses</a></li>
-                                        <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> Senior Projects</a></li>
+                                       <li><a href="../Admin/People.aspx"><span class="fa fa-pencil-square-o"></span> Courses</a></li>
+                                        <li><a href="../Admin/People.aspx"><span class="fa fa-tasks"></span> Senior Projects</a></li>
 
                                     </ul>
                                 </div>
                             </div>
                         </li>
 
-
-                         <!-- Dropdown-->
-                        <li class="panel panel-default" id="dropdown">
-                            <a data-toggle="collapse" href="#dropdown3">
-                                <span class="glyphicon glyphicon-user"></span> Research <span class="caret"></span>
-                            </a>
-
-                            <!-- Dropdown level 1 -->
-                            <div id="dropdown3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <ul class="nav navbar-nav">
-
-                                        <li><a href="../Admin/ResearchAreas.aspx"><span class="glyphicon glyphicon-send"></span> Research Areas</a></li>
-                                        <li><a href="../Admin/People.aspx"><span class="glyphicon glyphicon-send"></span> Research Projects</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="../Admin/Social.aspx"><span class="glyphicon glyphicon-cloud"></span> Users</a></li>
-                        <li><a href="../Admin/Carousel.aspx"><span class="glyphicon glyphicon-cloud"></span> Carousel</a></li>
-                        <li><a href="../Admin/Social.aspx"><span class="glyphicon glyphicon-cloud"></span> Social Icons</a></li>
+                        <li><a href="../Admin/ResearchAreas.aspx"><span class="fa fa-magic"></span> Research Areas</a></li>
+                        <li><a href="../Admin/Social.aspx"><span class="fa fa-user"></span> Users</a></li>
+                        <li><a href="../Admin/Carousel.aspx"><span class="fa fa-image"></span> Carousel</a></li>
+                        <li><a href="../Admin/Social.aspx"><span class="fa fa-share"></span> Social Icons</a></li>
                         <li><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></li>
 
                     </ul>

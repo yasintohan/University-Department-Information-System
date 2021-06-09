@@ -70,6 +70,7 @@
     <Content Include="Admin\About.aspx" />
     <Content Include="Admin\Announces.aspx" />
     <Content Include="Admin\Carousel.aspx" />
+    <Content Include="Admin\Classrooms.aspx" />
     <Content Include="Admin\Contact.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="Admin\Carousel.aspx.designer.cs">
       <DependentUpon>Carousel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Classrooms.aspx.cs">
+      <DependentUpon>Classrooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Classrooms.aspx.designer.cs">
+      <DependentUpon>Classrooms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -315,6 +323,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images\Classrooms\" />
     <Folder Include="Images\Labs\" />
   </ItemGroup>
   <PropertyGroup>

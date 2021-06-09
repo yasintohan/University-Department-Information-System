@@ -55,7 +55,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 
 	<div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/Announces.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
              <center><i class="fa fa-bullhorn" style="color:#3369e8"> </i></center>
           </div>
@@ -69,7 +69,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 	</div>
     <div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/Events.aspx">
           <div class="wrimagecard-topimage_header" style="background-color: rgba(22, 160, 133, 0.1)">
             <center><i class = "fa fa-calendar" style="color:#16A085"></i></center>
           </div>
@@ -83,7 +83,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     
     <div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/News.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:   rgba(250, 188, 9, 0.1)">
              <center><i class="fa fa-table" style="color:#fabc09"> </i></center>
           </div>
@@ -136,7 +136,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 
     <div class="col-md-3 col-sm-4">
 	<div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/People.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:rgba(187, 120, 36, 0.1) ">
             <center><i class="fa fa-user" style="color:#BB7824"></i></center>
           </div>
@@ -149,7 +149,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
       </div>
 	<div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/About.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:  rgba(250, 188, 9, 0.1)">
              <center><i class="fa fa-info-circle" style="color:#fabc09"> </i></center>
           </div>
@@ -163,7 +163,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 	</div>
 	<div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/Offices.aspx">
             <div class="wrimagecard-topimage_header" style="background-color: rgba(121, 90, 71, 0.1)">
            <center><i class="fa fa-building" style="color:#795a47"> </i></center> 
           </div>
@@ -177,7 +177,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 	</div>
 	<div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/Contact.aspx">
          <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
             <center><i class="fa fa-phone" style="color:#825d09"></i></center>
           </div>
@@ -191,14 +191,14 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 
 
      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <pre> Research </pre>
+            <pre> Other </pre>
     </div>
 
 
 
     <div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/ResearchAreas.aspx">
          <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
             <center><i class="fa fa-magic" style="color:#825d09"></i></center>
           </div>
@@ -209,19 +209,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
         </a>
       </div>
 	</div>
-    <div class="col-md-3 col-sm-4">
-      <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
-         <div class="wrimagecard-topimage_header" style="background-color: rgba(130, 93, 9, 0.1)">
-            <center><i class="fa fa-tasks" style="color:#825d09"></i></center>
-          </div>
-          <div class="wrimagecard-topimage_title">
-            <h4>Researcg Projects
-            <div class="pull-right badge" id="WrThemesIcons"></div></h4>
-          </div>
-        </a>
-      </div>
-	</div>
+
 
 
 
