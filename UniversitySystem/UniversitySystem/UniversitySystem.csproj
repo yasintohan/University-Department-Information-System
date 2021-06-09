@@ -67,10 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\About.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\People.aspx" />
+    <Content Include="Admin\ResearchAreas.aspx" />
     <Content Include="Admin\Social.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
@@ -114,6 +116,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +150,13 @@
     </Compile>
     <Compile Include="Admin\People.aspx.designer.cs">
       <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ResearchAreas.aspx.cs">
+      <DependentUpon>ResearchAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ResearchAreas.aspx.designer.cs">
+      <DependentUpon>ResearchAreas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Social.aspx.cs">
       <DependentUpon>Social.aspx</DependentUpon>
