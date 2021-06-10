@@ -144,6 +144,32 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddPeople(string Name, string Degree, string Image, string Mail, string Tel, string user_id)
+        {
+            cmd = new SqlCommand("Insert into People (Name, Degree, Image, Mail, Tel, user_id) values (@p1, @p2, @p3, @p4, @p5, @p6)", cnn);
+            cmd.Parameters.AddWithValue("@p1", Name);
+            cmd.Parameters.AddWithValue("@p2", Degree);
+            cmd.Parameters.AddWithValue("@p3", Image);
+            cmd.Parameters.AddWithValue("@p4", Mail);
+            cmd.Parameters.AddWithValue("@p5", Tel);
+            cmd.Parameters.AddWithValue("@p6", user_id);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+
+        public void AddUser(string username, string pass, string role)
+        {
+            cmd = new SqlCommand("Insert into UserTable (username, password, role) values (@p1, @p2, @p3)", cnn);
+            cmd.Parameters.AddWithValue("@p1", username);
+            cmd.Parameters.AddWithValue("@p2", pass);
+            cmd.Parameters.AddWithValue("@p3", role);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
         public SqlDataReader getData()
         {
             cnn.Open();

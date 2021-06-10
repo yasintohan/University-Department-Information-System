@@ -81,6 +81,7 @@
     <Content Include="Admin\People.aspx" />
     <Content Include="Admin\ResearchAreas.aspx" />
     <Content Include="Admin\Social.aspx" />
+    <Content Include="Admin\Users.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
     <Content Include="Content\style.css" />
@@ -220,6 +221,13 @@
     <Compile Include="Admin\Social.aspx.designer.cs">
       <DependentUpon>Social.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DBFunctions.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -325,6 +333,7 @@
   <ItemGroup>
     <Folder Include="Images\Classrooms\" />
     <Folder Include="Images\Labs\" />
+    <Folder Include="Images\People\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

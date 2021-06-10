@@ -135,7 +135,7 @@
                         </li>
 
                         <li><a href="../Admin/ResearchAreas.aspx"><span class="fa fa-magic"></span> Research Areas</a></li>
-                        <li><a href="../Admin/Social.aspx"><span class="fa fa-user"></span> Users</a></li>
+                        <li><a href="../Admin/Users.aspx"><span class="fa fa-user"></span> Users</a></li>
                         <li><a href="../Admin/Carousel.aspx"><span class="fa fa-image"></span> Carousel</a></li>
                         <li><a href="../Admin/Social.aspx"><span class="fa fa-share"></span> Social Icons</a></li>
                         <li><asp:LinkButton OnClick="LogoutButton_Click" CClass="logout" ID="LogoutButton" runat="server"><span class="glyphicon glyphicon-log-out"></span> Log-out</asp:LinkButton></li>

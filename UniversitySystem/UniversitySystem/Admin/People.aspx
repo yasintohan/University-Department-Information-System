@@ -22,62 +22,33 @@
                     <th scope="col">Degree</th>
                     <th scope="col">Mail</th>
                     <th scope="col">Tel</th>
+                    <th scope="col">Username</th>
                     <th scope="col">Crud</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img class="img-responsive" width="50px" height="50px" src="https://ceng.eskisehir.edu.tr/img/aarslan2.jpg" alt=""></td>
-                    <td>Yasin Tohan</td>
-                    <td>Degree</td>
-                    <td>Mail</td>
-                    <td>Tel</td>
-                    <td>
-                        <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
-                        <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
-                        <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img class="img-responsive" width="50px" height="50px" src="https://ceng.eskisehir.edu.tr/img/aarslan2.jpg" alt=""></td>
-                    <td>Yasin Tohan</td>
-                    <td>Degree</td>
-                    <td>Mail</td>
-                    <td>Tel</td>
-                    <td>
-                        <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
-                        <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
-                        <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img class="img-responsive" width="50px" height="50px" src="https://ceng.eskisehir.edu.tr/img/aarslan2.jpg" alt=""></td>
-                    <td>Yasin Tohan</td>
-                    <td>Degree</td>
-                    <td>Mail</td>
-                    <td>Tel</td>
-                    <td>
-                        <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
-                        <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
-                        <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td><img class="img-responsive" width="50px" height="50px" src="https://ceng.eskisehir.edu.tr/img/aarslan2.jpg" alt=""></td>
-                    <td>Yasin Tohan</td>
-                    <td>Degree</td>
-                    <td>Mail</td>
-                    <td>Tel</td>
-                    <td>
-                        <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
-                        <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
-                        <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
-                    </td>
-                </tr>
+                 <asp:ListView runat="server" ID="lstData">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("Id") %></th>
+                                        <td><img class="img-responsive" width="50px" height="50px" src="<%#Eval("Image") %>" alt=""></td>
+                                        <td><%#Eval("Name") %></td>
+                                        <td><%#Eval("Degree") %></td>
+                                        <td><%#Eval("Mail") %></td>
+                                        <td><%#Eval("Tel") %></td>
+                                        <td><%#Eval("username") %></td>
+                                        <td>
+                                            <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                            <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
+                                            <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
+                                        </td>
+                                    </tr>
+
+                                 
+                                </ItemTemplate>
+                            </asp:ListView>
+
+                
 
 
 
@@ -92,72 +63,82 @@
 
 
 
-    <div class="col-lg-12 form-bg">
 
 
+   <div class="col-lg-12 form-bg">
 
+        
+        
         <form class="form-horizontal">
-            <fieldset>
+            
 
                 <!-- Form Name -->
                 <legend>People Adding Form</legend>
 
+                <div class="col-lg-4 col-md-6 col-sm-12 col-centered">
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="nameInput">Name &amp; Surname</label>
-                    <div class="col-md-4">
-                        <input id="nameInput" name="nameInput" type="text" placeholder="Name Surname" class="form-control input-md" required="">
-                        <span class="help-block">E.g: Yasin Tohan</span>
-                    </div>
+                    <label class="control-label">Name</label>
+                        <asp:TextBox ID="nameTxt" runat="server" placeholder="Name" class="form-control input-md"></asp:TextBox>
+                        
+                    
                 </div>
 
-                <!-- Text input-->
+                    <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="degreeInput">Degree</label>
-                    <div class="col-md-4">
-                        <input id="degreeInput" name="degreeInput" type="text" placeholder="Degree" class="form-control input-md" required="">
-                        <span class="help-block">E.g: Head of Department</span>
-                    </div>
+                    <label class="control-label">Degree</label>
+                        <asp:TextBox ID="degreeTxt" runat="server" placeholder="" class="form-control input-md"></asp:TextBox>
+                        
+                    
                 </div>
 
-                <!-- File Button -->
+
+                                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="imageBtn">Image</label>
-                    <div class="col-md-4">
-                        <input id="imageBtn" name="imageBtn" class="input-file" type="file">
-                    </div>
+                    <label class="control-label">Image</label>
+                        </asp:TextBox><asp:FileUpload ID="imageupload" runat="server" accept=".png,.jpg,.jpeg,.gif" class="form-control input-md"/>
+
                 </div>
 
-                <!-- Text input-->
+                      <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="mailInput">Mail</label>
-                    <div class="col-md-4">
-                        <input id="mailInput" name="mailInput" type="text" placeholder="Mail" class="form-control input-md" required="">
-                        <span class="help-block">E.g: jhondao@mail.com</span>
-                    </div>
+                    <label class="control-label">Mail</label>
+                        <asp:TextBox ID="mailTxt" runat="server" placeholder="" class="form-control input-md" TextMode="Email"></asp:TextBox>
+                        
+                    
                 </div>
-
-                <!-- Text input-->
+                
+                      <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="telInput">Tel</label>
-                    <div class="col-md-4">
-                        <input id="telInput" name="telInput" type="text" placeholder="Tel" class="form-control input-md" required="">
-
-                    </div>
+                    <label class="control-label">Tel</label>
+                        <asp:TextBox ID="telTxt" runat="server" placeholder="" class="form-control input-md" ></asp:TextBox>
+                        
+                    
                 </div>
+
+                      <!-- Text input-->
+                <div class="form-group">
+                    <label class="control-label">User Id</label>
+                        <asp:TextBox ID="userTxt" runat="server" placeholder="" class="form-control input-md" ></asp:TextBox>
+                        
+                    
+                </div>
+                
 
                 <!-- Button (Double) -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="addBtn"></label>
-                    <div class="col-md-8">
-                        <button id="addBtn" name="addBtn" class="btn btn-success">Add</button>
-                        <button id="clearBtn" name="clearBtn" class="btn btn-danger">Clear</button>
-                    </div>
+                    <label class="control-label" for="addBtn"></label>
+                        <asp:Button ID="addBtn" OnClick="addBtn_Click" runat="server" Text="Add" class="btn btn-success"/>
+                        <button type="reset" id="clearBtn" name="clearBtn" class="btn btn-danger">Clear</button>
                 </div>
-
-            </fieldset>
+                </div>
+            
         </form>
 
     </div>
+
+
+
+   
 
 </asp:Content>
