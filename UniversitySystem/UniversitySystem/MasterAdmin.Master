@@ -127,7 +127,7 @@
                                     <ul class="nav navbar-nav">
 
                                        <li><a href="../Admin/People.aspx"><span class="fa fa-pencil-square-o"></span> Courses</a></li>
-                                        <li><a href="../Admin/People.aspx"><span class="fa fa-tasks"></span> Senior Projects</a></li>
+                                        <li><a href="../Admin/SeniorProjects.aspx"><span class="fa fa-tasks"></span> Senior Projects</a></li>
 
                                     </ul>
                                 </div>

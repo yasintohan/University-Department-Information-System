@@ -80,6 +80,7 @@
     <Content Include="Admin\Offices.aspx" />
     <Content Include="Admin\People.aspx" />
     <Content Include="Admin\ResearchAreas.aspx" />
+    <Content Include="Admin\SeniorProjects.aspx" />
     <Content Include="Admin\Social.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -213,6 +214,13 @@
     </Compile>
     <Compile Include="Admin\ResearchAreas.aspx.designer.cs">
       <DependentUpon>ResearchAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SeniorProjects.aspx.cs">
+      <DependentUpon>SeniorProjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SeniorProjects.aspx.designer.cs">
+      <DependentUpon>SeniorProjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Social.aspx.cs">
       <DependentUpon>Social.aspx</DependentUpon>

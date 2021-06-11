@@ -116,7 +116,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 	</div>
 	<div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/SeniorProjects.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:  rgba(51, 105, 232, 0.1)">
              <center><i class="fa fa-tasks" style="color:#3369e8"> </i></center>
           </div>

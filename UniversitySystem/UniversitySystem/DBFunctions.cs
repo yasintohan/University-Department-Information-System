@@ -170,6 +170,20 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+
+        public void AddProjects(string student_name, string Title, string Date, string Supervisor)
+        {
+            cmd = new SqlCommand("Insert into SeniorProjects (student_name, Title, Date, Supervisor) values (@p1, @p2, @p3, @p4)", cnn);
+            cmd.Parameters.AddWithValue("@p1", student_name);
+            cmd.Parameters.AddWithValue("@p2", Title);
+            cmd.Parameters.AddWithValue("@p3", Date);
+            cmd.Parameters.AddWithValue("@p4", Supervisor);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
+
         public SqlDataReader getData()
         {
             cnn.Open();
