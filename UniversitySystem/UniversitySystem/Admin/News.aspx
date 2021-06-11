@@ -33,9 +33,8 @@
                                         <td><%#Eval("Description") %></td>
                                         <td><%#Eval("datep") %></td>
                                         <td>
-                                            <button id="36" type="button" class="btn btn-info btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-info-sign"></i></button>
-                                            <button id="36" type="button" class="btn btn-warning btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-edit"></i></button>
-                                            <button id="36" type="button" class="btn btn-danger btn-xs delete_button" data-toggle="modal" data-target="#delmodal"><i class="glyphicon glyphicon-trash"></i></button>
+                                            <a href="<%#HttpContext.Current.Request.Url.AbsoluteUri %>?delete=<%#Eval("Id") %>" class="btn btn-danger btn-xs delete_button" ><i class="glyphicon glyphicon-trash"></i></a>
+
                                         </td>
                                     </tr>
                                 </ItemTemplate>

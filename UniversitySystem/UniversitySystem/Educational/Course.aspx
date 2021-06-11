@@ -97,6 +97,7 @@
                                         <div id="collapse<%#Container.DisplayIndex + 1 %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                   <%#Eval("Description") %>
+                                                 <a href="<%#Eval("[Document]") %>"><%#Eval("document_name") %></a>
                                             </div>
                                         </div>
                                     </div>
@@ -152,7 +153,7 @@
                                         <div id="task<%#Container.DisplayIndex + 1 %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                   <p><%#Eval("Description") %></p>
-
+                                                    <a href="<%#Eval("[Document]") %>"><%#Eval("document_name") %></a>
                                                     <p><b>Finish Date:</b><%#Eval("FinishDate") %></p>
                                             </div>
                                         </div>

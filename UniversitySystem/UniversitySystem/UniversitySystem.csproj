@@ -347,6 +347,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Documents\" />
     <Folder Include="Images\Classrooms\" />
     <Folder Include="Images\Labs\" />
     <Folder Include="Images\People\" />

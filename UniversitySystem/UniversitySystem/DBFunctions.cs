@@ -237,5 +237,17 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void delete(string table, string id_name, string idd)
+        {
+            string deletestr = "DELETE FROM "+ table+" WHERE "+ id_name + " = @p1";
+            cmd = new SqlCommand(deletestr, cnn);
+            //cmd.Parameters.AddWithValue("@p2", id_name);
+            cmd.Parameters.AddWithValue("@p1", idd);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+            
+        }
+
     }
 }
