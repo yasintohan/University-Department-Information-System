@@ -96,7 +96,7 @@
                                         </div>
                                         <div id="collapse<%#Container.DisplayIndex + 1 %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
-                                                  <%#Eval("Id") %><%#Eval("Description") %>
+                                                  <%#Eval("Description") %>
                                             </div>
                                         </div>
                                     </div>
@@ -108,13 +108,59 @@
 
                     </div>
                     <div class="tab-pane fade" id="tab2default">
-                        Announcements
+                         <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+
+                              <asp:ListView runat="server" ID="announceList">
+                                  <ItemTemplate>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#announce<%#Container.DisplayIndex + 1 %>" aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="more-less"><%#Eval("PublishDate") %></i>
+                                                   <%#Eval("Title") %>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="announce<%#Container.DisplayIndex + 1 %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                  <%#Eval("Description") %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </ItemTemplate>
+                              </asp:ListView>
+
+                        </div><!-- panel-group -->
 
 
                     </div>
                     <div class="tab-pane fade" id="tab3default">
 
-                        Assignments
+                         <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+
+                              <asp:ListView runat="server" ID="taskList">
+                                  <ItemTemplate>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#task<%#Container.DisplayIndex + 1 %>" aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="more-less"><%#Eval("PublishDate") %></i>
+                                                    <%#Eval("Title") %>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="task<%#Container.DisplayIndex + 1 %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                  <p><%#Eval("Description") %></p>
+
+                                                    <p><b>Finish Date:</b><%#Eval("FinishDate") %></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </ItemTemplate>
+                              </asp:ListView>
+
+                        </div><!-- panel-group -->
                     </div>
 
                  </div>

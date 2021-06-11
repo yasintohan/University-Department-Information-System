@@ -27,10 +27,6 @@ namespace UniversitySystem.Educational
         private void getData(string Id)
         {
 
-            //DBFunctions db = new DBFunctions("Select *, FORMAT (Date, 'dd/MM/yyyy ') as datep from Events");
-            //weeklist.DataSource = db.getData();
-            //weeklist.DataBind();
-            //db.close();
             string dataquery = "Select *, (Select Name from People Where Id = Courses.People_Id) as Assistant, (Select Name from People Where Id = Courses.Instructor_Id) as Instructor from Courses Where Id = " + Id;
             DBFunctions db = new DBFunctions(dataquery);
             SqlDataReader data = db.getData();
@@ -46,10 +42,21 @@ namespace UniversitySystem.Educational
             db.close();
 
             string weekquery = "Select * from CourseWeeks Where Course_Id = " + Id + " Order by Id";
-
             db = new DBFunctions(weekquery);
             weeklist.DataSource = db.getData();
             weeklist.DataBind();
+            db.close();
+
+            string announcequery = "Select * from CourseAnnounces Where Course_Id = " + Id + " Order by PublishDate desc";
+            db = new DBFunctions(announcequery);
+            announceList.DataSource = db.getData();
+            announceList.DataBind();
+            db.close();
+
+            string taskquery = "Select * from Assignments Where Course_Id = " + Id + " Order by Id desc";
+            db = new DBFunctions(taskquery);
+            taskList.DataSource = db.getData();
+            taskList.DataBind();
             db.close();
         }
     }
