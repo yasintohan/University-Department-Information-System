@@ -8,7 +8,7 @@
 
     <div class="col-lg-12">
 
-        <h2 class="about-h">@ViewBag.Title</h2>
+        <h2 class="about-h">Senior Projects</h2>
 
 
     </div>
@@ -29,30 +29,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2016</th>
-                            <td>2</td>
-                        </tr>
+                        <asp:ListView runat="server" ID="lstCount">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("date") %></th>
+                                        <td><%#Eval("Count") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
 
                     </tbody>
 
@@ -81,48 +65,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Yasin Tohan</td>
-                        <td>University Information System</td>
-                        <td>2021</td>
-                        <td>Assist. Prof. Dr. Ahmet ARSLAN</td>
-                    </tr>
+
+                      <asp:ListView runat="server" ID="lstData">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th scope="row"><%#Eval("project_id") %></th>
+                                        <td><%#Eval("student_name") %></td>
+                                        <td><%#Eval("Title") %></td>
+                                        <td><%#Eval("datep") %></td>
+                                        <td><%#Eval("name") %></td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:ListView>
+                 
+                    
                 </tbody>
 
             </table>

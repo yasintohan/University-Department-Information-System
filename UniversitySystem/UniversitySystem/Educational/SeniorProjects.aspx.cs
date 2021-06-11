@@ -18,15 +18,15 @@ namespace UniversitySystem.Educational
         private void getData()
         {
 
-            //DBFunctions db = new DBFunctions("Select * from Events");
-           // lstData.DataSource = db.getData();
-           // lstData.DataBind();
-            //db.close();
+            DBFunctions db = new DBFunctions("Select *, DATEPART(YYYY,Date) as datep, (Select Name From People Where Id = SeniorProjects.SuperVisor) as name from SeniorProjects");
+            lstData.DataSource = db.getData();
+            lstData.DataBind();
+            db.close();
 
-           // db = new DBFunctions("SELECT DATEPART(YYYY,Date) as date, COUNT(Date) as count FROM Events GROUP BY DATEPART(YYYY,Date)");
-            //lstCount.DataSource = db.getData();
-            //lstCount.DataBind();
-            //db.close();
+            db = new DBFunctions("SELECT DATEPART(YYYY,Date) as date, COUNT(Date) as count FROM SeniorProjects GROUP BY DATEPART(YYYY,Date)");
+            lstCount.DataSource = db.getData();
+            lstCount.DataBind();
+            db.close();
 
         }
     }
