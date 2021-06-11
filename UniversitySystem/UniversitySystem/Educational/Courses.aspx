@@ -4,21 +4,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
     <div class="col-lg-12">
-    <h2 class="about-h">Undergraduate and Graduate Courseware in Current Semester</h2>
+    <h2 class="about-h">Undergraduate and Graduate Courseware</h2>
 
     <ul class="list-unstyled">
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
-        <li><a href="#">BIL551 - Advanced Database Management Systems</a></li>
+         <asp:ListView runat="server" ID="lstData">
+                                <ItemTemplate>
+                                    <li><a href="../Educational/Course.aspx?Id=<%#Eval("Id") %>"><%#Eval("Name") %></a></li>
+                                    
+                                </ItemTemplate>
+                            </asp:ListView>
+
+
     </ul>
 
 </div>

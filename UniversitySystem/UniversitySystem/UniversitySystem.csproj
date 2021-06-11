@@ -93,6 +93,7 @@
     <Content Include="Department\Infrastructure.aspx" />
     <Content Include="Department\People.aspx" />
     <Content Include="Department\PeoplePage.aspx" />
+    <Content Include="Educational\Course.aspx" />
     <Content Include="Educational\Courses.aspx" />
     <Content Include="Educational\SeniorProjects.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -285,6 +286,13 @@
     </Compile>
     <Compile Include="Department\PeoplePage.aspx.designer.cs">
       <DependentUpon>PeoplePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Educational\Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Educational\Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
     </Compile>
     <Compile Include="Educational\Courses.aspx.cs">
       <DependentUpon>Courses.aspx</DependentUpon>

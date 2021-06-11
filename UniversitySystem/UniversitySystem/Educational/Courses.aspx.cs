@@ -12,6 +12,17 @@ namespace UniversitySystem.Educational
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            getData();
+        }
+
+        private void getData()
+        {
+
+            DBFunctions db = new DBFunctions("Select * from Courses");
+            lstData.DataSource = db.getData();
+            lstData.DataBind();
+            db.close();
+
         }
     }
 }
