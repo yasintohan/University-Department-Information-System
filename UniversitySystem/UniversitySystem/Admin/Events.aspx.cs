@@ -27,7 +27,7 @@ namespace UniversitySystem.Admin
         private void getData()
         {
 
-            DBFunctions db = new DBFunctions("Select *, FORMAT (Date, 'dd/MM/yyyy ') as datep from Events");
+            DBFunctions db = new DBFunctions("Select *, FORMAT (Date, 'dd/MM/yyyy') as datep from Events");
             lstData.DataSource = db.getData();
             lstData.DataBind();
             db.close();
