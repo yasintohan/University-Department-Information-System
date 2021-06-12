@@ -35,7 +35,7 @@
                                         <td><%#Eval("datep") %></td>
                                         <td><%#Eval("name") %></td>
                                         <td>
-                                             <a href="<%#HttpContext.Current.Request.Url.AbsoluteUri %>?delete=<%#Eval("Id") %>" class="btn btn-danger btn-xs delete_button" ><i class="glyphicon glyphicon-trash"></i></a>
+                                             <a href="<%#HttpContext.Current.Request.Url.AbsoluteUri %>?delete=<%#Eval("project_id") %>" class="btn btn-danger btn-xs delete_button" ><i class="glyphicon glyphicon-trash"></i></a>
 
                                         </td>
                                     </tr>

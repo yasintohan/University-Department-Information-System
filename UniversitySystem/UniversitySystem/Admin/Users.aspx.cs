@@ -12,7 +12,17 @@ namespace UniversitySystem.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Page.IsPostBack)
+                return;
+
             getData();
+
+            if (!string.IsNullOrEmpty(Request.QueryString["delete"]))
+            {
+                string id = Request.QueryString["delete"];
+                delete(id);
+
+            }
         }
 
         private void getData()
@@ -42,5 +52,14 @@ namespace UniversitySystem.Admin
             }
         }
 
+        protected void delete(string id)
+        {
+
+            DBFunctions db = new DBFunctions();
+            db.delete("UserTable", "user_id", id);
+
+            string path = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path);
+            Response.Redirect(path);
+        }
     }
 }
