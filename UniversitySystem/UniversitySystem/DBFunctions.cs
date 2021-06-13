@@ -222,6 +222,31 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddCourse(string name, string book, string grading, string ins_id, string assist_id)
+        {
+            if (!String.IsNullOrEmpty(assist_id))
+            {
+                cmd = new SqlCommand("Insert into Courses (Name, CourseBook, Grading, Instructor_Id, People_Id) values (@p1, @p2, @p3, @p4, @p5)", cnn);
+                cmd.Parameters.AddWithValue("@p1", name);
+                cmd.Parameters.AddWithValue("@p2", book);
+                cmd.Parameters.AddWithValue("@p3", grading);
+                cmd.Parameters.AddWithValue("@p4", ins_id);
+                cmd.Parameters.AddWithValue("@p5", assist_id);
+            } else
+            {
+                cmd = new SqlCommand("Insert into Courses (Name, CourseBook, Grading, Instructor_Id) values (@p1, @p2, @p3, @p4)", cnn);
+                cmd.Parameters.AddWithValue("@p1", name);
+                cmd.Parameters.AddWithValue("@p2", book);
+                cmd.Parameters.AddWithValue("@p3", grading);
+                cmd.Parameters.AddWithValue("@p4", ins_id);
+
+            }
+
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
 
         public SqlDataReader getData()
         {
