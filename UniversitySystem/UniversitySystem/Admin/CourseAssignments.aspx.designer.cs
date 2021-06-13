@@ -24,6 +24,15 @@ namespace UniversitySystem.Admin
         protected global::System.Web.UI.WebControls.ListView lstData;
 
         /// <summary>
+        /// titleTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox titleTxt;
+
+        /// <summary>
         /// descTxt control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,24 @@ namespace UniversitySystem.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload folderUpload;
+
+        /// <summary>
+        /// sdateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox sdateTxt;
+
+        /// <summary>
+        /// fdateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox fdateTxt;
 
         /// <summary>
         /// addBtn control.

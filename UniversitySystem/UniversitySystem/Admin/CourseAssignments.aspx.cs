@@ -49,7 +49,7 @@ namespace UniversitySystem.Admin
 
         protected void addBtn_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(descTxt.Text))
+            if (!String.IsNullOrEmpty(descTxt.Text) && !String.IsNullOrEmpty(titleTxt.Text))
             {
                 string docName = folderUpload.FileName;
                 string docPath = "../Documents/" + docName;
@@ -58,17 +58,15 @@ namespace UniversitySystem.Admin
 
                 if (folderUpload.PostedFile != null && folderUpload.PostedFile.FileName != "")
                 {
-
                     folderUpload.SaveAs(Server.MapPath(docPath));
-
-
                 }
 
                 DBFunctions db = new DBFunctions();
                 id = Int32.Parse(Request.QueryString["id"]);
-                db.AddWeek(descTxt.Text, docPath, id, docName);
+                db.AddAssignment(titleTxt.Text, descTxt.Text, sdateTxt.Text, fdateTxt.Text, docPath, id, docName);
                 getData();
                 descTxt.Text = "";
+                titleTxt.Text = "";
             }
 
         }

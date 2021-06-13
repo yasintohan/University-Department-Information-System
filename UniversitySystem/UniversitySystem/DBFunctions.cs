@@ -207,6 +207,21 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddAssignment(string title, string desc, string sdate, string fdate, string document, int course_id, string doc_name)
+        {
+            cmd = new SqlCommand("Insert into Assignments (Title, Description, Document, PublishDate, FinishDate, Course_Id, document_name) values (@p1, @p2, @p3, @p4, @p5, @p6, @p7)", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", desc);
+            cmd.Parameters.AddWithValue("@p3", document);
+            cmd.Parameters.AddWithValue("@p4", sdate);
+            cmd.Parameters.AddWithValue("@p5", fdate);
+            cmd.Parameters.AddWithValue("@p6", course_id);
+            cmd.Parameters.AddWithValue("@p7", doc_name);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
 
         public SqlDataReader getData()
         {

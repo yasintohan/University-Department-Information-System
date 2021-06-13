@@ -68,7 +68,7 @@
                 <!-- Text input-->
                 <div class="form-group">
                     <label class="control-label">Description</label>
-                        <asp:TextBox ID="descTxt" runat="server" placeholder="Icon Name" class="form-control input-md" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="descTxt" runat="server" placeholder="Description" class="form-control input-md" TextMode="MultiLine"></asp:TextBox>
 
                     
                 </div>
