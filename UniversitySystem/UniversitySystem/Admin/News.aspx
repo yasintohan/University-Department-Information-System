@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="UniversitySystem.Admin.News" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>News - ESTU ADMIN</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 

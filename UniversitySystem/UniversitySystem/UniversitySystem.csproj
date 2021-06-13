@@ -92,7 +92,6 @@
     <Content Include="Department\Events.aspx" />
     <Content Include="Department\Infrastructure.aspx" />
     <Content Include="Department\People.aspx" />
-    <Content Include="Department\PeoplePage.aspx" />
     <Content Include="Educational\Course.aspx" />
     <Content Include="Educational\Courses.aspx" />
     <Content Include="Educational\SeniorProjects.aspx" />
@@ -101,6 +100,7 @@
     <Content Include="Images\Class_B1_icon.jpg" />
     <Content Include="Images\estu.jpg" />
     <Content Include="Images\estuLogo.png" />
+    <Content Include="Images\icon.png" />
     <Content Include="Images\logo_eng.jpg" />
     <Content Include="Images\logo_eurace.jpg" />
     <Content Include="Images\logo_mudek.jpg" />
@@ -279,13 +279,6 @@
     </Compile>
     <Compile Include="Department\People.aspx.designer.cs">
       <DependentUpon>People.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Department\PeoplePage.aspx.cs">
-      <DependentUpon>PeoplePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Department\PeoplePage.aspx.designer.cs">
-      <DependentUpon>PeoplePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Educational\Course.aspx.cs">
       <DependentUpon>Course.aspx</DependentUpon>

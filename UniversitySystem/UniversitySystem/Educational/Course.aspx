@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Course.aspx.cs" Inherits="UniversitySystem.Educational.Course" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <title>Course - ESTU</title>
     <style>
         .infolist{
            list-style:none;

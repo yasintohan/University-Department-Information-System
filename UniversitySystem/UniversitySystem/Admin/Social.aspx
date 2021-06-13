@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Social.aspx.cs" Inherits="UniversitySystem.Admin.Social" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
+   <title>Social Icons - ESTU ADMIN</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 

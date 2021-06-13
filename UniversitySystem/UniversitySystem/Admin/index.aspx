@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="UniversitySystem.Admin.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Home - ESTU ADMIN</title>
         <style>
         .wrimagecard{	
 	margin-top: 0;
@@ -108,6 +109,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
           <div class="wrimagecard-topimage_title" >
             <h4>Courses
             <div class="pull-right badge" id="WrForms"></div>
+                <div class="pull-right badge"><asp:Label ID="courselabel" runat="server" Text="Label"></asp:Label></div>
             </h4>
           </div>
           
@@ -142,7 +144,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
           </div>
           <div class="wrimagecard-topimage_title">
             <h4>People
-            <div class="pull-right badge">18</div></h4>
+            <div class="pull-right badge"><asp:Label ID="peoplelabel" runat="server" Text="Label"></asp:Label></div></h4>
           </div>
         </a>
       </div>

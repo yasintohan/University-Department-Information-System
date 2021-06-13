@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Carousel.aspx.cs" Inherits="UniversitySystem.Admin.Carousel" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <title>Carousels - ESTU ADMIN</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 

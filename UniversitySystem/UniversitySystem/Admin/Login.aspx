@@ -10,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<title>Page Title</title>
-
+    <title>Login - ESTU</title>
+     <link rel="icon" href="../Images/icon.png" type="image/x-icon" />
 
       <link href="../Content/bootstrap.css" rel="stylesheet" />
     <link href="../Content/style.css" rel="stylesheet" />
