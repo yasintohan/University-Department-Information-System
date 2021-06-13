@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -30,17 +31,17 @@ namespace UniversitySystem.Admin
             {
 
                 DBFunctions db = new DBFunctions();
-                int id = db.testLogin(txtUserName.Text, txtPassword.Text);
-                if (id != -1)
+                SqlDataReader dr = db.testLogin(txtUserName.Text, txtPassword.Text);
+                if (dr.Read())
                 {
                     if(rememberCheck.Checked)
                         Session.Timeout = 1200;
                     else
                         Session.Timeout = 60;
 
-                    Session.Add("User_id", id);
-
+                    Session.Add("User_id", Int32.Parse(dr["user_id"].ToString()));
                     Session.Add("Username", txtUserName.Text);
+                    Session.Add("Userrole", dr["role"].ToString());
                     Response.Redirect("../Admin/index.aspx");
 
                 }

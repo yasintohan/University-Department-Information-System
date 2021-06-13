@@ -17,12 +17,7 @@ namespace UniversitySystem.Admin
 
             getData();
 
-            if (!string.IsNullOrEmpty(Request.QueryString["delete"]))
-            {
-                string id = Request.QueryString["delete"];
-                delete(id);
 
-            }
         }
 
         private void getData()
@@ -48,11 +43,13 @@ namespace UniversitySystem.Admin
 
         }
 
-        protected void delete(string id)
-        {
 
+
+        protected void DelButton_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
             DBFunctions db = new DBFunctions();
-            db.delete("ResearchAreas", "Id", id);
+            db.delete("ResearchAreas", "Id", btn.CommandArgument);
 
             string path = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path);
             Response.Redirect(path);

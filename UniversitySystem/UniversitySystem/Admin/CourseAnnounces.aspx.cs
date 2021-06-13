@@ -26,11 +26,6 @@ namespace UniversitySystem.Admin
 
             }
 
-            if (!string.IsNullOrEmpty(Request.QueryString["delete"]))
-            {
-                string weekid = Request.QueryString["delete"];
-                delete(weekid);
-            }
         }
 
         private void getData()
@@ -61,11 +56,13 @@ namespace UniversitySystem.Admin
 
         }
 
-        protected void delete(string delid)
-        {
 
+
+        protected void DelButton_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
             DBFunctions db = new DBFunctions();
-            db.delete("CourseAnnounces", "Id", delid);
+            db.delete("CourseAnnounces", "Id", btn.CommandArgument);
 
             string path = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path) + "?id=" + id;
             Response.Redirect(path);

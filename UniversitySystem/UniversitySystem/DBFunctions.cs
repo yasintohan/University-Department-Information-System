@@ -27,7 +27,7 @@ namespace UniversitySystem
             cmd = new SqlCommand(querystr, cnn);
         }
 
-        public int testLogin(string u, string p)
+        public SqlDataReader testLogin(string u, string p)
         {
             cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[1].ConnectionString);
 
@@ -36,14 +36,8 @@ namespace UniversitySystem
             cmd.Parameters.AddWithValue("@upass", p);
             cnn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
-
-            if (dr.Read())
-            {
-                return Int32.Parse(dr["user_id"].ToString());
-            } else
-            {
-                return -1;
-            }
+            return dr;
+           
         }
 
         public void AddSocialIcon(string iconname, string link)

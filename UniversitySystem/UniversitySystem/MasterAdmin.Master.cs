@@ -12,11 +12,14 @@ namespace UniversitySystem
         protected void Page_Load(object sender, EventArgs e)
         {
             object username = Session["Username"];
+            object userrole = Session["Userrole"];
 
             if (username == null)
             {
+              
                 Response.Redirect("../Admin/login.aspx");
-            }
+            } 
+            
 
         }
 

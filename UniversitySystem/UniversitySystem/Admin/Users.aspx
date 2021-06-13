@@ -30,7 +30,7 @@
                                         <td><%#Eval("username") %></td>
                                         <td><%#Eval("role") %></td>
                                         <td>
-                                         <a href="<%#HttpContext.Current.Request.Url.AbsoluteUri %>?delete=<%#Eval("user_id") %>" class="btn btn-danger btn-xs delete_button" ><i class="glyphicon glyphicon-trash"></i></a>
+                                          <asp:LinkButton ID="DelButton" OnClick="DelButton_Click" runat="server" class="btn btn-danger btn-xs delete_button" commandargument='<%#Eval("user_id") %>'><i class="glyphicon glyphicon-trash"></i></asp:LinkButton>
 
                                         </td>
                                     </tr>

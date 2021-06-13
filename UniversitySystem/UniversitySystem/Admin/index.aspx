@@ -50,7 +50,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1> Home </h1>
-            <pre> Resize the screen to view the left slide menu </pre>
+            <pre> Main </pre>
     </div>
 
 
