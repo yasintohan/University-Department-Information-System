@@ -183,6 +183,18 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddWeek(string desc, string document, int course_id, string doc_name)
+        {
+            cmd = new SqlCommand("Insert into CourseWeeks (Description, Document, Course_Id, document_name) values (@p1, @p2, @p3, @p4)", cnn);
+            cmd.Parameters.AddWithValue("@p1", desc);
+            cmd.Parameters.AddWithValue("@p2", document);
+            cmd.Parameters.AddWithValue("@p3", course_id);
+            cmd.Parameters.AddWithValue("@p4", doc_name);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
 
         public SqlDataReader getData()
         {

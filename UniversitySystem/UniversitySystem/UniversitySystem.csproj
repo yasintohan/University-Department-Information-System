@@ -72,6 +72,9 @@
     <Content Include="Admin\Carousel.aspx" />
     <Content Include="Admin\Classrooms.aspx" />
     <Content Include="Admin\Contact.aspx" />
+    <Content Include="Admin\Course\Announce.aspx" />
+    <Content Include="Admin\Course\Assignment.aspx" />
+    <Content Include="Admin\Course\index.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Labs.aspx" />
@@ -83,6 +86,7 @@
     <Content Include="Admin\SeniorProjects.aspx" />
     <Content Include="Admin\Social.aspx" />
     <Content Include="Admin\Users.aspx" />
+    <Content Include="Admin\Week.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\style-admin.css" />
     <Content Include="Content\style.css" />
@@ -160,6 +164,27 @@
     <Compile Include="Admin\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Course\Announce.aspx.cs">
+      <DependentUpon>Announce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Course\Announce.aspx.designer.cs">
+      <DependentUpon>Announce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Course\Assignment.aspx.cs">
+      <DependentUpon>Assignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Course\Assignment.aspx.designer.cs">
+      <DependentUpon>Assignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Course\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Course\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +261,13 @@
     </Compile>
     <Compile Include="Admin\Users.aspx.designer.cs">
       <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Week.aspx.cs">
+      <DependentUpon>Week.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Week.aspx.designer.cs">
+      <DependentUpon>Week.aspx</DependentUpon>
     </Compile>
     <Compile Include="DBFunctions.cs" />
     <Compile Include="Default.aspx.cs">

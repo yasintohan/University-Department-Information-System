@@ -96,7 +96,7 @@
                                  <!-- Text input-->
                 <div class="form-group">
                     <label class="control-label">Image</label>
-                        </asp:TextBox><asp:FileUpload ID="imageupload" runat="server" accept=".png,.jpg,.jpeg,.gif" class="form-control input-md"/>
+                        <asp:FileUpload ID="imageupload" runat="server" accept=".png,.jpg,.jpeg,.gif" class="form-control input-md"/>
 
                 </div>
 
