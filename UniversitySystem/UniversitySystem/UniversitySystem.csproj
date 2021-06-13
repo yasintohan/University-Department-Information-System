@@ -72,9 +72,9 @@
     <Content Include="Admin\Carousel.aspx" />
     <Content Include="Admin\Classrooms.aspx" />
     <Content Include="Admin\Contact.aspx" />
-    <Content Include="Admin\Course\Announce.aspx" />
-    <Content Include="Admin\Course\Assignment.aspx" />
-    <Content Include="Admin\Course\index.aspx" />
+    <Content Include="Admin\CourseAnnounces.aspx" />
+    <Content Include="Admin\CourseAssignments.aspx" />
+    <Content Include="Admin\Courses.aspx" />
     <Content Include="Admin\Events.aspx" />
     <Content Include="Admin\index.aspx" />
     <Content Include="Admin\Labs.aspx" />
@@ -164,26 +164,26 @@
     <Compile Include="Admin\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Course\Announce.aspx.cs">
-      <DependentUpon>Announce.aspx</DependentUpon>
+    <Compile Include="Admin\CourseAnnounces.aspx.cs">
+      <DependentUpon>CourseAnnounces.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Course\Announce.aspx.designer.cs">
-      <DependentUpon>Announce.aspx</DependentUpon>
+    <Compile Include="Admin\CourseAnnounces.aspx.designer.cs">
+      <DependentUpon>CourseAnnounces.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Course\Assignment.aspx.cs">
-      <DependentUpon>Assignment.aspx</DependentUpon>
+    <Compile Include="Admin\CourseAssignments.aspx.cs">
+      <DependentUpon>CourseAssignments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Course\Assignment.aspx.designer.cs">
-      <DependentUpon>Assignment.aspx</DependentUpon>
+    <Compile Include="Admin\CourseAssignments.aspx.designer.cs">
+      <DependentUpon>CourseAssignments.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Course\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Admin\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Course\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Admin\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>

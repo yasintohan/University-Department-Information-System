@@ -195,6 +195,18 @@ namespace UniversitySystem
             cnn.Close();
         }
 
+        public void AddCourseAnnounce(string title, string desc, string date, int course_id)
+        {
+            cmd = new SqlCommand("Insert into CourseAnnounces (Title, Description, PublishDate, Course_Id) values (@p1, @p2, @p3, @p4)", cnn);
+            cmd.Parameters.AddWithValue("@p1", title);
+            cmd.Parameters.AddWithValue("@p2", desc);
+            cmd.Parameters.AddWithValue("@p3", date);
+            cmd.Parameters.AddWithValue("@p4", course_id);
+            cnn.Open();
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+        }
+
 
         public SqlDataReader getData()
         {

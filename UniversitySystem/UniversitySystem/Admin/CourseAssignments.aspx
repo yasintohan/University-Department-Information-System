@@ -1,16 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="Week.aspx.cs" Inherits="UniversitySystem.Admin.Week" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterAdmin.Master" AutoEventWireup="true" CodeBehind="CourseAssignments.aspx.cs" Inherits="UniversitySystem.Admin.CourseAssignments" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Course Weeks - ESTU ADMIN</title>
+    <title>Course Assignments - ESTU ADMIN</title>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-        <h2 class="about-h">Course Weeks</h2>
+     <h2 class="about-h">Course Assignments</h2>
 
 
 <div class="col-lg-12 form-bg">
 
     <!-- Form Name -->
-    <legend>Week List</legend>
+    <legend>Assignments List</legend>
 
 
     <div class="table-responsive">
@@ -18,6 +19,7 @@
             <thead>
                 <tr>
                     <th scope="col">Id</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Description</th>
                     <th scope="col">Document</th>
                     <th scope="col">Crud</th>
@@ -29,6 +31,7 @@
                                 <ItemTemplate>
                                     <tr>
                                         <td><%#Eval("Id") %></td>
+                                        <td><%#Eval("Title") %></td>
                                         <td><%#Eval("Description") %></td>
                                         <td><%#Eval("document_name") %></td>
                                         <td>
@@ -62,7 +65,7 @@
             
 
                 <!-- Form Name -->
-                <legend>Week Adding Form</legend>
+                <legend>Assignments Adding Form</legend>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 col-centered">
                 <!-- Text input-->

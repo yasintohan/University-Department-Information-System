@@ -102,7 +102,7 @@ a.wrimagecard:hover, .wrimagecard-topimage:hover {
     </div>
 <div class="col-md-3 col-sm-4">
       <div class="wrimagecard wrimagecard-topimage">
-          <a href="#">
+          <a href="../Admin/Courses.aspx">
           <div class="wrimagecard-topimage_header" style="background-color:  rgba(213, 15, 37, 0.1)">
             <center><i class="fa fa-pencil-square-o" style="color:#d50f25"> </i></center>
           </div>
