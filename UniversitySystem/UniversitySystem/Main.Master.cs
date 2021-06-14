@@ -11,6 +11,22 @@ namespace UniversitySystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            object username = Session["Username"]; 
+
+            if (username != null)
+            {
+                if (Session["Userrole"].ToString().Trim().Equals("Admin", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    signinlabel1.Text = Session["Username"].ToString() + " - Admin";
+                    signinlabel2.Text = Session["Username"].ToString() + " - Admin";
+                } else
+                {
+                    signinlabel1.Text = Session["Username"].ToString() + " - Logout";
+                    signinlabel2.Text = Session["Username"].ToString() + " - Logout";
+                }
+
+            }
+
 
             getData();
         }
@@ -42,5 +58,7 @@ namespace UniversitySystem
 
 
         }
+
+
     }
 }

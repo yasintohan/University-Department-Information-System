@@ -18,7 +18,13 @@ namespace UniversitySystem
             {
               
                 Response.Redirect("../Admin/login.aspx");
-            } 
+            } else if (!Session["Userrole"].ToString().Trim().Equals("Admin", StringComparison.InvariantCultureIgnoreCase))
+            {
+                Session.Abandon();
+                Response.Redirect("../");
+            }
+
+
             
 
         }

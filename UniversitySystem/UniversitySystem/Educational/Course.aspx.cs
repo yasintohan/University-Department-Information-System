@@ -15,12 +15,25 @@ namespace UniversitySystem.Educational
             if (Page.IsPostBack)
                 return;
 
-            if (!string.IsNullOrEmpty(Request.QueryString["Id"]))
-            {
-                string courseId = Request.QueryString["Id"];
-                getData(courseId);
+            object username = Session["Username"];
 
+            if (username == null)
+            {
+
+                Panel1.Visible = false;
             }
+            else
+            {
+                Panel2.Visible = false;
+                if (!string.IsNullOrEmpty(Request.QueryString["Id"]))
+                {
+                    string courseId = Request.QueryString["Id"];
+                    getData(courseId);
+
+                }
+            }
+
+           
             
         }
 

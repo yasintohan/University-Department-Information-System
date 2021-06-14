@@ -57,7 +57,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-
+    <asp:Panel ID="Panel1" runat="server">
 
     <div class="row" style="margin-top:20px;">
         <div class="col-md-3">
@@ -167,6 +167,17 @@
                  </div>
         </div>
     </div>
+        </asp:Panel>
 
+
+    <asp:Panel ID="Panel2" runat="server">
+
+
+    <div class="col-lg-12">
+    <h2 class="about-h">You can see the contents of this page after you log in.</h2>
+
+    </div>
+
+</asp:Panel>
 
 </asp:Content>

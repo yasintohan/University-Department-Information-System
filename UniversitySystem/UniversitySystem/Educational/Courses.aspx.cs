@@ -11,8 +11,19 @@ namespace UniversitySystem.Educational
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            object username = Session["Username"];
 
-            getData();
+            if (username == null)
+            {
+
+                Panel1.Visible = false;
+            }
+            else 
+            {
+                Panel2.Visible = false;
+                getData();
+            }
+            
         }
 
         private void getData()

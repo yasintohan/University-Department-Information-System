@@ -42,7 +42,16 @@ namespace UniversitySystem.Admin
                     Session.Add("User_id", Int32.Parse(dr["user_id"].ToString()));
                     Session.Add("Username", txtUserName.Text);
                     Session.Add("Userrole", dr["role"].ToString());
-                    Response.Redirect("../Admin/index.aspx");
+
+
+                    if (dr["role"].ToString().Trim().Equals("Admin", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        Response.Redirect("../Admin/index.aspx");
+                    }
+                    else
+                    {
+                        Response.Redirect("../");
+                    }
 
                 }
                 else

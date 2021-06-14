@@ -264,7 +264,7 @@ body {
     position: fixed;
     left: -300px;
     width: 300px;
-    top: 43px;
+    top: 120px;
     height: 100%;
     border-right: 1px solid #e7e7e7;
     -moz-animation: slideout 300ms forwards;
@@ -326,7 +326,7 @@ body {
   /* Slide side body*/
   .side-body {
     margin-left: 5px;
-    margin-top: 70px;
+    margin-top: 150px;
     position: relative;
     -moz-animation: bodyslideout 300ms forwards;
     -o-animation: bodyslideout 300ms forwards;

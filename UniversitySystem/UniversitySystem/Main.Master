@@ -24,7 +24,7 @@
 </head>
 <body>
 
-
+    <form runat="server">
 
     <header>
         <div id="mogo-header">
@@ -74,10 +74,8 @@
                                 </li>
 
                                 <li><a href="../Research/ResearchAreas.aspx">Research Areas</a></li>
-
-                               
-
-                                <li><a href="../Admin/index.aspx">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                                
+                                <li><a href="../Admin/index.aspx"><asp:Label ID="signinlabel1" runat="server" Text="Sign-in"></asp:Label> <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                             </ul>
 
                         </div>
@@ -105,7 +103,8 @@
                                 </li>
 
                                 <li><a href="../Research/ResearchAreas.aspx">Research Areas</a></li>
-                                <li><a href="../Admin/index.aspx">Sign-in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+
+                                <li><a href="../Admin/index.aspx"><asp:Label ID="signinlabel2" runat="server" Text="Sign-in"></asp:Label>  <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
                             </ul>
 
                         </div><!-- /.navbar-collapse -->
@@ -240,7 +239,7 @@
 
 
 
-
+        </form>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="../Scripts/jquery-3.4.1.js"></script>
         <script src="../Scripts/bootstrap.js"></script>
