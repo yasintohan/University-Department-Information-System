@@ -1,5 +1,7 @@
 # University Department Information-System <img src="https://img.shields.io/badge/-C%23-659ad2?style=flat&logo=c%2B%2B&logoColor=ffffff">
 
+<img src = "/images/university-system-banner.jpg">
+
 It is a website where university students can access a lot of information about the department they study. On the site, they is able to access announcements, teachers, all the courses that are and are not opened this semester, the pages of the courses and the weekly plan, homework and files on the course pages. This website is a clone of our university's "https://ceng.eskisehir.edu.tr/" page. There are student and admin access. Admin can add or remove announcements, courses, users, students and all other features. I have specified the pages you can change and access information on the website on the next page.
 
   - Source Codes with Asp.NET Web Forms [Link](https://github.com/yasintohan/University-Department-Information-System/tree/main/UniversitySystem)
