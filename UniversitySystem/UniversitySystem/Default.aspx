@@ -17,7 +17,7 @@
 
         <div class="col-lg-8" style="padding:20px">
 
-            <p>Computer Engineering Program of Eskişehir Technical University is accredited by <a class="" href="index.html">MÜDEK</a> (Member of <a class="" href="index.html">EUR-ACE</a> and <a class="" href="index.html">International Engineering Alliance</a>) since September 2009.</p>
+            <p>Computer Engineering Program of Eskişehir Technical University is accredited by <a class="" href="">MÜDEK</a> (Member of <a class="" href="">EUR-ACE</a> and <a class="" href="">International Engineering Alliance</a>) since September 2009.</p>
 
         </div>
 
@@ -53,13 +53,13 @@
         <div class="col-lg-4">
 
             <div class="announce-title">
-                <a class="pull-right" href="">All announcements <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+                <a class="pull-right" href="../Department/Announces.aspx">All announcements <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
                 <h3>Announcements</h3>
             </div>
 
             <div class="row row-striped">
 
-
+               
 
                 <ul>
 
@@ -83,7 +83,7 @@
         <div class="col-lg-4">
 
             <div class="announce-title">
-                <a class="pull-right" href="">All events <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+                <a class="pull-right" href="../Department/Events.aspx">All events <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
                 <h3>Events</h3>
             </div>
 
@@ -115,7 +115,7 @@
         <div class="col-lg-4">
 
             <div class="announce-title">
-                <a class="pull-right" href="">All news <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+                <a class="pull-right" href="../Department/News.aspx">All news <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
                 <h3>News</h3>
 
             </div>

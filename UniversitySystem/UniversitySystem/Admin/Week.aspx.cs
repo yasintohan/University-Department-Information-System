@@ -77,7 +77,7 @@ namespace UniversitySystem.Admin
             DBFunctions db = new DBFunctions();
             db.delete("CourseWeeks", "Id", btn.CommandArgument);
 
-            string path = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path) + "?id=" + id;
+            string path = HttpContext.Current.Request.Url.AbsoluteUri;
             Response.Redirect(path);
         }
     }

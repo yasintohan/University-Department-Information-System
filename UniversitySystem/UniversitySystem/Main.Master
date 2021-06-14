@@ -21,6 +21,17 @@
       <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
+    <style>
+
+        #mogo-slider .mogo-slider-title{
+            font-size: 60px;
+            color: #fff;
+        }
+        #mogo-slider .mogo-slider-title .mogo-slider-sub {
+            font-size: 35px;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -124,7 +135,7 @@
                                             <%#Eval("Title") %>
                                         </h3>
                                         <p><%#Eval("Description") %></p>
-                                        <a href="#" class="slider-btn">Learn more</a>
+                                        
                                     </div>
                                 </ItemTemplate>
                             </asp:ListView>
@@ -137,7 +148,7 @@
                                             <%#Eval("Title") %>
                                         </h3>
                                         <p><%#Eval("Description") %></p>
-                                        <a href="#" class="slider-btn">Learn more</a>
+                                        
                                     </div>
                                 </ItemTemplate>
                             </asp:ListView>

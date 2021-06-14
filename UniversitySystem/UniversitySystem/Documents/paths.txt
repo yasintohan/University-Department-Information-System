@@ -1,0 +1,23 @@
+C:\Users\B7\Desktop\bim208-hw3-yasincidem\target
+/home/B7/apache-manifoldcf-2.11-bin.zip
+
+
+
+md5sum B7/apache-manifoldcf-2.11-bin.zip
+
+
+B7@DESKTOP-P829K5F /home/PC1
+$ md5sum ../B7/apache-manifoldcf-2.11-bin.zip
+40d630d9fb39a629a744ec489a6e7d78 *../B7/apache-manifoldcf-2.11-bin.zip
+
+B7@DESKTOP-P829K5F /home/PC1
+$ md5sum ~/apache-manifoldcf-2.11-bin.zip
+40d630d9fb39a629a744ec489a6e7d78 */home/B7/apache-manifoldcf-2.11-bin.zip
+
+~ home directory
+. burası
+.. bir üst
+
+"C:\\Users\\B7\\Desktop\\bim208-hw3-yasincidem\\src\\main\\java");
+
+"C:\\Users\\LAB7\\Documents\\bim208-hw3-yasincidem\\src\\main\\java");

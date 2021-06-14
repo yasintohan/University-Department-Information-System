@@ -92,9 +92,11 @@
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Department\About.aspx" />
+    <Content Include="Department\Announces.aspx" />
     <Content Include="Department\Contact.aspx" />
     <Content Include="Department\Events.aspx" />
     <Content Include="Department\Infrastructure.aspx" />
+    <Content Include="Department\News.aspx" />
     <Content Include="Department\People.aspx" />
     <Content Include="Educational\Course.aspx" />
     <Content Include="Educational\Courses.aspx" />
@@ -284,6 +286,13 @@
     <Compile Include="Department\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Department\Announces.aspx.cs">
+      <DependentUpon>Announces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\Announces.aspx.designer.cs">
+      <DependentUpon>Announces.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Department\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,6 +313,13 @@
     </Compile>
     <Compile Include="Department\Infrastructure.aspx.designer.cs">
       <DependentUpon>Infrastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Department\People.aspx.cs">
       <DependentUpon>People.aspx</DependentUpon>
